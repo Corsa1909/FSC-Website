@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Fertility Solutions Center Cancún</title>
+<meta name="description" content="Reach Fertility Solutions Center by video call, WhatsApp, email, or phone. Free consultation available. We respond within 24 hours.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --purple:#7B68AE; --purple2:#6657A0; --dark:#3D2C6E; --navy:#2D1F5E;
+    --light:#F4F1FA; --gray:#F8F7FC; --text:#2C2C2C; --soft:#4A4A6A;
+    --muted:#6B7280; --white:#FFFFFF; --border:#E2DCF0;
+    --green:#25D366; --radius:12px; --shadow:0 4px 28px rgba(61,44,110,.10);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; color:var(--text); background:var(--white); line-height:1.65; }
+
+  /* ── NAV ── */
+  nav {
+    position:sticky; top:0; z-index:200; background:var(--white); padding:0 5%;
+    display:flex; align-items:center; justify-content:space-between;
+    height:140px; border-bottom:1px solid var(--border); box-shadow:0 2px 16px rgba(61,44,110,.07);
+  }
+  .nav-logo-link { display:flex; align-items:center; text-decoration:none; }
+  .nav-logo { height:44px; filter:invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6); }
+  .nav-menu { display:flex; align-items:center; gap:6px; }
+  .nav-menu > li { list-style:none; position:relative; }
+  .nav-menu > li > a {
+    color:var(--soft); text-decoration:none; font-size:.86rem; font-weight:500;
+    padding:8px 12px; border-radius:6px; display:flex; align-items:center; gap:4px;
+    transition:color .2s, background .2s; white-space:nowrap;
+  }
+  .nav-menu > li > a:hover { color:var(--purple); background:var(--light); }
+  .nav-menu > li > a .arrow { font-size:.65rem; opacity:.6; }
+  .nav-menu > li > a.active { color:var(--purple); font-weight:700; }
+  .nav-dropdown {
+    position:absolute; top:calc(100% + 8px); left:0; background:var(--white);
+    border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+    min-width:190px; list-style:none; padding:6px 0; opacity:0; visibility:hidden;
+    transform:translateY(-6px); transition:opacity .2s,transform .2s,visibility .2s; z-index:300;
+  }
+  .has-dropdown:hover .nav-dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+  .nav-dropdown li a { display:block; padding:10px 18px; font-size:.86rem; color:var(--soft); text-decoration:none; transition:background .15s,color .15s; }
+  .nav-dropdown li a:hover { background:var(--light); color:var(--purple); }
+  .nav-dropdown li + li { border-top:1px solid var(--border); }
+  .nav-cta {
+    background:var(--purple); color:var(--white) !important; padding:10px 20px;
+    border-radius:7px; font-weight:600; font-size:.86rem; text-decoration:none;
+    transition:background .2s; white-space:nowrap; margin-left:8px;
+  }
+  .nav-cta:hover { background:var(--purple2); }
+  .nav-toggle { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+  .nav-toggle span { display:block; width:22px; height:2px; background:var(--dark); border-radius:2px; transition:all .3s; }
+  nav.open .nav-toggle span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  nav.open .nav-toggle span:nth-child(2) { opacity:0; }
+  nav.open .nav-toggle span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+  nav.open .nav-menu {
+    display:flex; flex-direction:column; align-items:flex-start;
+    position:absolute; top:140px; left:0; right:0; background:var(--white);
+    border-bottom:1px solid var(--border); padding:16px 5% 20px; gap:2px;
+    box-shadow:0 8px 24px rgba(61,44,110,.1);
+  }
+  nav.open .nav-menu > li { width:100%; }
+  nav.open .nav-menu > li > a { padding:10px 0; border-radius:0; }
+  nav.open .nav-dropdown {
+    position:static; opacity:1; visibility:visible; transform:none;
+    box-shadow:none; border:none; border-left:3px solid var(--border);
+    border-radius:0; padding:4px 0 4px 12px; margin-top:2px;
+  }
+  nav.open .nav-dropdown li a { padding:8px 12px; }
+  @media(max-width:860px){ .nav-toggle{display:flex;} .nav-menu{display:none;} .nav-cta{font-size:.8rem;padding:9px 14px;} }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);
+    padding:72px 6% 64px; text-align:center;
+  }
+  .page-eyebrow { font-size:.75rem; font-weight:700; color:#C9BFED; letter-spacing:1.8px; text-transform:uppercase; margin-bottom:14px; }
+  .page-hero h1 { font-size:clamp(1.9rem,3vw,2.6rem); font-weight:800; color:var(--white); line-height:1.2; margin-bottom:16px; }
+  .page-hero h1 em { font-style:normal; color:#C9BFED; }
+  .page-hero p { font-size:1rem; color:rgba(255,255,255,.7); max-width:560px; margin:0 auto; line-height:1.75; }
+
+  /* ── CONTACT CARDS GRID ── */
+  .contact-section { padding:72px 6%; }
+  .contact-section .inner { max-width:1060px; margin:0 auto; }
+  .contact-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-bottom:64px; }
+  .contact-card {
+    background:var(--white); border:1px solid var(--border); border-radius:16px;
+    padding:36px 32px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:0;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .contact-card:hover { transform:translateY(-3px); box-shadow:0 8px 36px rgba(61,44,110,.14); }
+  .contact-card.primary { border-top:4px solid var(--purple); }
+  .contact-card.whatsapp { border-top:4px solid var(--green); }
+  .contact-card.email    { border-top:4px solid #7B68AE; }
+  .contact-card.phone    { border-top:4px solid var(--dark); }
+  .cc-icon { font-size:2.2rem; margin-bottom:16px; }
+  .cc-label { font-size:.72rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .cc-title { font-size:1.1rem; font-weight:800; color:var(--dark); margin-bottom:10px; }
+  .cc-desc { font-size:.9rem; color:var(--muted); line-height:1.65; margin-bottom:24px; flex:1; }
+  .cc-btn {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:12px 26px; border-radius:8px; font-weight:700; font-size:.92rem;
+    text-decoration:none; transition:background .2s, transform .15s; text-align:center;
+  }
+  .cc-btn:hover { transform:translateY(-1px); }
+  .cc-btn.purple { background:var(--purple); color:white; }
+  .cc-btn.purple:hover { background:var(--purple2); }
+  .cc-btn.green  { background:var(--green); color:white; }
+  .cc-btn.green:hover { background:#1ebe5c; }
+  .cc-btn.outline { background:transparent; color:var(--dark); border:1.5px solid var(--border); }
+  .cc-btn.outline:hover { border-color:var(--purple); color:var(--purple); }
+  .cc-detail { font-size:.82rem; color:var(--muted); margin-top:10px; text-align:center; }
+
+  /* ── HOURS & LOCATION ── */
+  .info-strip {
+    background:var(--gray); border-radius:16px; padding:36px 40px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+    margin-bottom:0;
+  }
+  .info-item h3 { font-size:.8rem; font-weight:700; color:var(--purple); text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .info-item p { font-size:.92rem; color:var(--soft); line-height:1.7; }
+
+  /* ── FOOTER ── */
+  footer { background:var(--dark); padding:28px 6%; text-align:center; color:rgba(255,255,255,.45); font-size:.82rem; }
+  footer a { color:rgba(255,255,255,.55); text-decoration:none; }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:720px){
+    .contact-grid { grid-template-columns:1fr; }
+    .info-strip { grid-template-columns:1fr; gap:24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" style="height:144px;width:auto;display:block;" alt="Fertility Solutions Center">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html" class="active">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-eyebrow">Get in Touch</div>
+  <h1>We're <em>Here</em> — However<br>You Prefer to Reach Us</h1>
+  <p>Video call, WhatsApp, email, or phone — choose whatever feels right. Every first conversation is free, and there's no commitment involved.</p>
+</div>
+
+<!-- CONTACT CARDS -->
+<div class="contact-section">
+  <div class="inner">
+    <div class="contact-grid">
+
+      <!-- FREE VIDEO CALL -->
+      <div class="contact-card primary">
+        <div class="cc-icon"></div>
+        <div class="cc-label">Most Popular</div>
+        <div class="cc-title">Free Video Consultation</div>
+        <div class="cc-desc">A 30–45 minute call with our team. Bring your questions — we'll walk through your specific situation, the program options that make sense for your case, and the legal process. No preparation needed.</div>
+        <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="cc-btn purple">Book Your Free Call →</a>
+        <div class="cc-detail">Via Zoom or Google Meet · We adapt to your time zone</div>
+      </div>
+
+      <!-- WHATSAPP -->
+      <div class="contact-card whatsapp">
+        <div class="cc-icon"></div>
+        <div class="cc-label">Fastest Response</div>
+        <div class="cc-title">WhatsApp</div>
+        <div class="cc-desc">Prefer to start with a message? Write to us on WhatsApp. We respond personally — not with bots. Great for quick questions or to say you're interested before booking a call.</div>
+        <a href="https://wa.me/529843974122?text=Hello%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20learn%20more%20about%20surrogacy%20in%20Mexico." target="_blank" class="cc-btn green">Message Us on WhatsApp →</a>
+        <div class="cc-detail">+52 984 397 4122 · We respond within a few hours</div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contact-card email">
+        <div class="cc-icon"></div>
+        <div class="cc-label">For Detailed Inquiries</div>
+        <div class="cc-title">Email</div>
+        <div class="cc-desc">Prefer to write everything out? Send us an email describing your situation. We read every message carefully and respond with a personalized reply — not a template.</div>
+        <a href="mailto:info@fertilitysolutionscenter.com" class="cc-btn outline">Send Us an Email →</a>
+        <div class="cc-detail">info@fertilitysolutionscenter.com · We respond within 24 hours</div>
+      </div>
+
+      <!-- PHONE -->
+      <div class="contact-card phone">
+        <div class="cc-icon"></div>
+        <div class="cc-label">Prefer to Talk</div>
+        <div class="cc-title">Phone Call</div>
+        <div class="cc-desc">Sometimes you just want to hear a voice. Call us directly — our team speaks English and Spanish. If we miss your call, we'll call you back as soon as possible.</div>
+        <a href="tel:+529843974122" class="cc-btn outline">Call Us →</a>
+        <div class="cc-detail">+52 984 397 4122 · Monday–Friday, 9am–6pm CST</div>
+      </div>
+
+    </div>
+
+    <!-- HOURS & LOCATION -->
+    <div class="info-strip">
+      <div class="info-item">
+        <h3> Location</h3>
+        <p>Cancún, Quintana Roo, México<br>Serving families from the US, Canada, and worldwide</p>
+      </div>
+      <div class="info-item">
+        <h3> Office Hours</h3>
+        <p>Monday – Friday: 9:00 am – 6:00 pm CST<br>WhatsApp available outside office hours</p>
+      </div>
+      <div class="info-item">
+        <h3> Languages</h3>
+        <p>English · Español<br>We adapt to your preferred language at all times</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122">WhatsApp</a> &nbsp;·&nbsp; <a href="mailto:info@fertilitysolutionscenter.com">Email</a></p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav    = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  document.addEventListener('click', e => { if (!nav.contains(e.target)) nav.classList.remove('open'); });
+</script>
+</body>
+</html>

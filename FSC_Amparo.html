@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Amparo & Legal Protection | Fertility Solutions Center Cancún</title>
+<meta name="description" content="How the Amparo constitutional process protects your parental rights in surrogacy in Mexico — and how Fertility Solutions Center handles it in every program.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --purple:  #7B68AE;
+    --purple2: #6657A0;
+    --dark:    #3D2C6E;
+    --navy:    #2D1F5E;
+    --light:   #F4F1FA;
+    --gray:    #F8F7FC;
+    --text:    #2C2C2C;
+    --soft:    #4A4A6A;
+    --muted:   #6B7280;
+    --white:   #FFFFFF;
+    --border:  #E2DCF0;
+    --radius:  12px;
+    --shadow:  0 4px 28px rgba(61,44,110,.10);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text); background: var(--white); line-height: 1.65;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white); padding: 0 6%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 140px; border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 16px rgba(61,44,110,.07);
+  }
+  .nav-logo-link { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo { height: 44px; filter: invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6); }
+  .nav-menu { display: flex; align-items: center; gap: 6px; }
+  .nav-menu > li { list-style: none; position: relative; }
+  .nav-menu > li > a {
+    color: var(--soft); text-decoration: none; font-size: .86rem;
+    font-weight: 500; padding: 8px 12px; border-radius: 6px;
+    display: flex; align-items: center; gap: 4px; transition: color .2s, background .2s;
+    white-space: nowrap;
+  }
+  .nav-menu > li > a:hover { color: var(--purple); background: var(--light); }
+  .nav-menu > li > a .arrow { font-size: .65rem; opacity: .6; }
+  .nav-dropdown {
+    position: absolute; top: calc(100% + 8px); left: 0;
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+    min-width: 190px; list-style: none; padding: 6px 0;
+    opacity: 0; visibility: hidden; transform: translateY(-6px);
+    transition: opacity .2s, transform .2s, visibility .2s; z-index: 300;
+  }
+  .has-dropdown:hover .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-dropdown li a {
+    display: block; padding: 10px 18px; font-size: .86rem;
+    color: var(--soft); text-decoration: none; transition: background .15s, color .15s;
+  }
+  .nav-dropdown li a:hover { background: var(--light); color: var(--purple); }
+  .nav-dropdown li + li { border-top: 1px solid var(--border); }
+  .nav-cta {
+    background: var(--purple); color: var(--white) !important;
+    padding: 10px 20px; border-radius: 7px; font-weight: 600;
+    font-size: .86rem; text-decoration: none; transition: background .2s;
+    white-space: nowrap; margin-left: 8px;
+  }
+  .nav-cta:hover { background: var(--purple2); }
+  .nav-toggle {
+    display: none; flex-direction: column; gap: 5px;
+    background: none; border: none; cursor: pointer; padding: 6px;
+  }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--dark); border-radius: 2px; transition: all .3s; }
+  nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
+  nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  nav.open .nav-menu {
+    display: flex; flex-direction: column; align-items: flex-start;
+    position: absolute; top: 140px; left: 0; right: 0;
+    background: var(--white); border-bottom: 1px solid var(--border);
+    padding: 16px 5% 20px; gap: 2px; box-shadow: 0 8px 24px rgba(61,44,110,.1);
+  }
+  nav.open .nav-menu > li { width: 100%; }
+  nav.open .nav-menu > li > a { padding: 10px 0; border-radius: 0; }
+  nav.open .nav-dropdown {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    box-shadow: none; border: none; border-left: 3px solid var(--border);
+    border-radius: 0; padding: 4px 0 4px 12px; margin-top: 2px;
+  }
+  nav.open .nav-dropdown li a { padding: 8px 12px; }
+  @media (max-width: 860px) {
+    .nav-toggle { display: flex; }
+    .nav-menu { display: none; }
+    .nav-cta { font-size: .8rem; padding: 9px 14px; }
+  }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--dark) 100%);
+    padding: 80px 6% 72px; text-align: center;
+  }
+  .page-eyebrow {
+    font-size: .75rem; font-weight: 700; color: #C9BFED;
+    letter-spacing: 1.8px; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .page-hero h1 {
+    font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 800;
+    color: var(--white); line-height: 1.2; margin-bottom: 20px;
+  }
+  .page-hero h1 em { font-style: normal; color: #C9BFED; }
+  .page-hero p {
+    font-size: 1.05rem; color: rgba(255,255,255,.72);
+    max-width: 640px; margin: 0 auto; line-height: 1.75;
+  }
+
+  /* ── CONTENT SECTIONS ── */
+  .content-section {
+    padding: 72px 6%; max-width: 1100px; margin: 0 auto;
+  }
+  .content-section.gray { background: var(--gray); max-width: 100%; padding: 72px 6%; }
+  .content-section.gray .inner { max-width: 1100px; margin: 0 auto; }
+
+  .section-eyebrow {
+    font-size: .75rem; font-weight: 700; color: var(--purple);
+    letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;
+  }
+  h2.stitle {
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem); font-weight: 800;
+    color: var(--dark); margin-bottom: 14px; line-height: 1.2;
+  }
+  .sdesc {
+    font-size: 1rem; color: var(--muted); max-width: 640px;
+    margin-bottom: 48px; line-height: 1.75;
+  }
+
+  /* ── TWO COLUMN ── */
+  .two-col {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+  }
+  .prose p {
+    font-size: .97rem; color: var(--soft); line-height: 1.8; margin-bottom: 18px;
+  }
+  .prose p:last-child { margin-bottom: 0; }
+
+  /* ── TIMELINE ── */
+  .timeline-wrap { margin-top: 52px; }
+  .timeline {
+    display: flex; align-items: flex-start;
+    position: relative; gap: 0;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute; top: 28px; left: 28px; right: 28px; height: 3px;
+    background: var(--border); z-index: 0;
+  }
+  .tl-step {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; text-align: center; position: relative; z-index: 1;
+    padding: 0 8px;
+  }
+  .tl-dot {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--white); border: 3px solid var(--purple);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; margin-bottom: 16px; flex-shrink: 0;
+    box-shadow: 0 0 0 5px var(--white);
+  }
+  .tl-step.highlight .tl-dot {
+    background: var(--purple); border-color: var(--purple);
+    box-shadow: 0 0 0 5px var(--white), 0 4px 16px rgba(123,104,174,.35);
+  }
+  .tl-label {
+    font-size: .82rem; font-weight: 800; color: var(--dark);
+    line-height: 1.35; margin-bottom: 6px;
+  }
+  .tl-step.highlight .tl-label { color: var(--purple2); }
+  .tl-desc { font-size: .78rem; color: var(--muted); line-height: 1.5; }
+
+  @media (max-width: 720px) {
+    .timeline { flex-direction: column; align-items: flex-start; gap: 0; }
+    .timeline::before {
+      top: 28px; bottom: 28px; left: 27px; right: auto;
+      width: 3px; height: auto;
+    }
+    .tl-step { flex-direction: row; text-align: left; align-items: flex-start; gap: 16px; padding: 0 0 28px 0; }
+    .tl-dot { margin-bottom: 0; flex-shrink: 0; }
+    .tl-body { padding-top: 10px; }
+  }
+
+  /* ── HOW WE DO IT ── */
+  .process-block {
+    background: var(--white); border-radius: var(--radius);
+    border: 1px solid var(--border); box-shadow: var(--shadow);
+    padding: 36px; margin-top: 0;
+  }
+  .process-block h3 {
+    font-size: 1rem; font-weight: 800; color: var(--dark);
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pstep { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+  .pstep:last-child { margin-bottom: 0; }
+  .pstep-dot {
+    min-width: 28px; height: 28px; border-radius: 50%;
+    background: var(--purple); color: white; font-size: .75rem;
+    font-weight: 800; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .pstep-body strong {
+    display: block; font-size: .92rem; color: var(--dark);
+    margin-bottom: 4px; font-weight: 700;
+  }
+  .pstep-body span { font-size: .86rem; color: var(--muted); line-height: 1.55; }
+
+  /* ── HONEST NOTE ── */
+  .honest-note {
+    background: var(--light); border-left: 4px solid var(--purple);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 20px 24px; margin-top: 32px;
+    font-size: .9rem; color: var(--soft); line-height: 1.7;
+  }
+  .honest-note strong { color: var(--dark); }
+
+  /* ── FAQ ── */
+  .faq-list { display: flex; flex-direction: column; gap: 0; }
+  .faq-item {
+    border-bottom: 1px solid var(--border); padding: 22px 0;
+  }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-q {
+    font-size: .97rem; font-weight: 700; color: var(--dark);
+    margin-bottom: 10px;
+  }
+  .faq-a { font-size: .9rem; color: var(--muted); line-height: 1.7; }
+
+  /* ── CTA BLOCK ── */
+  .cta-block {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 100%);
+    padding: 72px 6%; text-align: center;
+  }
+  .cta-block h2 { color: var(--white); font-size: clamp(1.5rem, 2.2vw, 2rem); font-weight: 800; margin-bottom: 14px; }
+  .cta-block p { color: rgba(255,255,255,.7); font-size: .97rem; max-width: 520px; margin: 0 auto 32px; line-height: 1.7; }
+  .btn-main {
+    background: var(--purple); color: var(--white); padding: 12px 26px;
+    border-radius: 8px; font-weight: 700; font-size: .92rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 9px;
+    transition: background .2s, transform .15s;
+  }
+  .btn-main:hover { background: var(--purple2); transform: translateY(-2px); }
+  /* ── CONTACT FORM ── */
+  .form-section {
+    padding: 80px 6%; background: var(--gray);
+  }
+  .form-section .inner { max-width: 760px; margin: 0 auto; }
+  .form-section h2 { font-size: clamp(1.5rem, 2.2vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 10px; }
+  .form-section .form-sub { font-size: .97rem; color: var(--muted); margin-bottom: 36px; line-height: 1.65; }
+  .form-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+  }
+  .form-grid .full { grid-column: 1 / -1; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label {
+    font-size: .78rem; font-weight: 700; color: var(--soft);
+    letter-spacing: .5px; text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 12px 16px; border-radius: 8px;
+    border: 1.5px solid var(--border); background: var(--white);
+    font-size: .93rem; color: var(--text);
+    font-family: inherit; transition: border-color .2s;
+    appearance: none; -webkit-appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none; border-color: var(--purple);
+    box-shadow: 0 0 0 3px rgba(123,104,174,.12);
+  }
+  .select-wrap { position: relative; }
+  .select-wrap::after {
+    content: '▾'; position: absolute; right: 14px; top: 50%;
+    transform: translateY(-50%); color: var(--purple);
+    pointer-events: none; font-size: .9rem;
+  }
+  .phone-row { display: flex; gap: 10px; }
+  .phone-code { width: 90px; flex-shrink: 0; }
+  .phone-num { flex: 1; }
+  .form-submit {
+    margin-top: 8px; width: 100%; padding: 12px 16px;
+    background: var(--purple); color: white; border: none;
+    border-radius: 8px; font-size: .92rem; font-weight: 700;
+    cursor: pointer; font-family: inherit;
+    transition: background .2s, transform .15s;
+  }
+  .form-submit:hover { background: var(--purple2); transform: translateY(-1px); }
+  .form-note { font-size: .78rem; color: var(--muted); text-align: center; margin-top: 14px; }
+  input[readonly] { background: var(--light) !important; color: var(--muted); cursor: default; }
+  .autocomplete-wrap { position: relative; }
+  .autocomplete-dropdown {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+    background: var(--white); border: 1.5px solid var(--purple);
+    border-radius: 8px; box-shadow: var(--shadow);
+    list-style: none; margin: 0; padding: 4px 0;
+    z-index: 50; max-height: 220px; overflow-y: auto; display: none;
+  }
+  .autocomplete-dropdown.open { display: block; }
+  .autocomplete-item {
+    padding: 10px 16px; cursor: pointer;
+    font-size: .88rem; color: var(--text); line-height: 1.4;
+    border-bottom: 1px solid var(--border);
+    transition: background .15s;
+  }
+  .autocomplete-item:last-child { border-bottom: none; }
+  .autocomplete-item:hover, .autocomplete-item.active { background: var(--light); }
+  .autocomplete-item strong { color: var(--dark); }
+  .autocomplete-item span { color: var(--muted); font-size: .8rem; }
+  .autocomplete-loading {
+    padding: 10px 16px; font-size: .85rem; color: var(--muted); font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .form-grid .full { grid-column: 1; }
+  }
+
+  .btn-ghost-light {
+    background: transparent; color: rgba(255,255,255,.8); padding: 12px 26px;
+    border-radius: 8px; font-weight: 600; font-size: .92rem;
+    text-decoration: none; border: 1.5px solid rgba(255,255,255,.25);
+    display: inline-flex; align-items: center; gap: 9px;
+    transition: border-color .2s, color .2s; margin-left: 12px;
+  }
+  .btn-ghost-light:hover { border-color: rgba(255,255,255,.6); color: white; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark); padding: 28px 6%;
+    text-align: center; color: rgba(255,255,255,.45); font-size: .82rem;
+  }
+  footer a { color: rgba(255,255,255,.55); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 860px) {
+    .two-col { grid-template-columns: 1fr; }
+    .btn-ghost-light { margin-left: 0; margin-top: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" style="height:144px;width:auto;display:block;" alt="Fertility Solutions Center">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-eyebrow">Legal Protection · Surrogacy in Mexico</div>
+  <h1>The <em>Amparo</em> — What It Is,<br>What It Does, and How We Use It</h1>
+  <p>The most important legal mechanism in any Mexican surrogacy program. Here's everything you need to understand it — without the legal jargon.</p>
+</div>
+
+<!-- SECTION 1: WHAT IT IS -->
+<div class="content-section">
+  <div class="two-col">
+    <div>
+      <div class="section-eyebrow">The Legal Context</div>
+      <h2 class="stitle">Why Mexico's Legal Gap Is Actually Where the Amparo Becomes Powerful</h2>
+      <div class="prose">
+        <p>Mexico doesn't have a national surrogacy law. Individual states have different rules — some permissive, some restrictive, some silent on the issue entirely. That inconsistency is real, and any agency worth working with will tell you so upfront.</p>
+        <p>What fills that gap is the <strong>Amparo</strong> — a constitutional protection mechanism that exists in Mexican federal law. It's not a workaround or a loophole. It's a direct petition to a federal court asking for constitutional protection of your rights as a parent.</p>
+        <p>When an Amparo is granted, the federal court issues a binding order that instructs the civil registry on how to issue the birth certificate. That order overrides local state rules. It's enforceable across Mexico.</p>
+        <p>Not every agency in Mexico uses the Amparo. Some rely on local state procedures that can vary, be challenged, or leave the surrogate's name on the birth certificate. We don't consider that acceptable — which is why the Amparo is part of every program we run, without exception.</p>
+      </div>
+    </div>
+
+    <!-- IMAGE PLACEHOLDER -->
+    <div style="background:var(--gray); border-radius:var(--radius); border:1.5px dashed var(--border); min-height:320px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; color:var(--muted); font-size:.85rem; text-align:center; padding:24px;">
+      <div style="font-size:2rem; opacity:.4;"></div>
+      <span>Image: legal team / document signing<br>Replace with your photo</span>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="timeline-wrap">
+    <div class="timeline">
+
+      <div class="tl-step">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">Legal documents signed</div>
+          <div class="tl-desc">Contracts between all parties — intended parents, surrogate, and the agency — are reviewed and signed.</div>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">Birth</div>
+          <div class="tl-desc">Baby is born in a private hospital in Cancún. Immediate skin-to-skin contact with the intended parents.</div>
+        </div>
+      </div>
+
+      <div class="tl-step highlight">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">Amparo filed & granted</div>
+          <div class="tl-desc">Our legal team files the Amparo petition. A federal court issues the order establishing your parental rights.</div>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">Baby registered in your name(s)</div>
+          <div class="tl-desc">The civil registry issues the birth certificate listing only the intended parents. No surrogate name.</div>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-label">Baby goes home</div>
+          <div class="tl-desc">You leave Mexico with your child and a legally clean birth certificate. Your family, complete.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: HOW WE DO IT -->
+<div class="content-section gray">
+  <div class="inner">
+    <div class="two-col">
+      <div>
+        <div class="section-eyebrow">Our Process</div>
+        <h2 class="stitle">How We Handle It — So You Don't Have To</h2>
+        <div class="prose">
+          <p>The Amparo process is managed entirely by our in-house legal team. You don't need to hire a separate attorney, understand Mexican constitutional law, or track any of this yourself.</p>
+          <p>As part of every program we run, an Amparo is filed with the appropriate federal court on behalf of the intended parents. Our legal team prepares and submits the petition, follows up with the court, and coordinates with the civil registry once the order is granted.</p>
+          <p>We've been through this process many times. We know which courts handle these petitions, how long the process typically takes, and what documentation you'll need to provide from your side. We guide you through it step by step — in plain language, not legal terminology.</p>
+
+        </div>
+
+        <div class="honest-note">
+          <strong>One thing we always tell families:</strong> Mexican family law is still evolving, and each home country has its own process for registering a foreign birth certificate. We strongly recommend working with an immigration attorney in the US or Canada alongside your program here. We can refer you to attorneys who work specifically with families who've done this through our program — they know exactly what to expect.
+        </div>
+      </div>
+
+      <div class="process-block">
+        <h3>What happens on our end</h3>
+        <div class="pstep">
+          <div class="pstep-dot">1</div>
+          <div class="pstep-body">
+            <strong>Legal review of your case</strong>
+            <span>Our legal team reviews your documents and situation before anything is filed. We want to understand your specific circumstances first.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot">2</div>
+          <div class="pstep-body">
+            <strong>Amparo petition prepared and filed</strong>
+            <span>We prepare the full constitutional petition and file it with the appropriate federal court. You'll know when this happens.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot">3</div>
+          <div class="pstep-body">
+            <strong>Federal court issues the order</strong>
+            <span>The court grants the Amparo and issues a binding legal order establishing you as the parent(s) of your child.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot">4</div>
+          <div class="pstep-body">
+            <strong>Birth certificate issued in your name(s)</strong>
+            <span>The civil registry follows the court order. The birth certificate lists your name(s). The surrogate does not appear.</span>
+          </div>
+        </div>
+        <div class="pstep">
+          <div class="pstep-dot">5</div>
+          <div class="pstep-body">
+            <strong>You go home as a family</strong>
+            <span>You leave Mexico with your baby and a legally clean document. We stay available to support you with the consulate registration process.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: FAQ -->
+<div class="content-section">
+  <div class="section-eyebrow">Legal Questions</div>
+  <h2 class="stitle">What People Ask Us Most About the Amparo</h2>
+  <p class="sdesc">Straight answers to the questions we hear in almost every first consultation.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">Is the Amparo legally recognized in the US and Canada?</div>
+      <div class="faq-a">The Amparo produces a Mexican birth certificate — a document issued by a foreign civil registry under a federal court order. The US and Canada don't "recognize" the Amparo itself, but they do process foreign birth certificates for citizenship and passport purposes. Most of our families complete this without issues. We recommend working with an immigration attorney in your home country to handle that side of the process — we can refer you to professionals who've done it many times.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if the surrogacy process happens in a state where surrogacy isn't explicitly legal?</div>
+      <div class="faq-a">This is exactly where the Amparo matters most. Because it's a federal mechanism, it operates above state-level rules. The court order it produces doesn't depend on whether the state where the birth occurs has favorable surrogacy legislation. That's not a guarantee against complications, but it's a much stronger foundation than relying solely on local civil registry procedures.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can the surrogate contest her parental rights even with the Amparo?</div>
+      <div class="faq-a">An Amparo that has been granted and executed is a federal court ruling. It's not easily overturned. The surrogate is not a party to the birth certificate — her name doesn't appear on it. That said, no legal system anywhere offers absolute guarantees. What the Amparo gives you is the strongest available legal protection under Mexican law.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do we need to hire our own attorney in Mexico?</div>
+      <div class="faq-a">No. Our in-house legal team handles the Amparo process on your behalf. You don't need to find, brief, or coordinate with a separate Mexican attorney. What we do recommend is an immigration attorney in your home country for the consulate registration — that's a different jurisdiction and something we can't handle on our end, but we can make the referral.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What documents do we need to provide?</div>
+      <div class="faq-a">Generally: valid government-issued ID for both intended parents, and documentation confirming your status as intended parents in the program. Our legal team will give you a specific list once we've reviewed your case — it varies slightly depending on your family configuration and your country of residence.</div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-block">
+  <h2>Still have questions about the legal process?</h2>
+  <p>Ask us directly in a free video call. No preparation needed — just bring your questions and we'll walk through everything that applies to your specific situation.</p>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="btn-main"> Schedule Your Free Call</a>
+  <a href="https://wa.me/529843974122?text=Hello%2C%20I%20have%20questions%20about%20the%20Amparo%20process." target="_blank" class="btn-ghost-light"> Ask on WhatsApp</a>
+
+</div>
+
+<!-- CONTACT FORM -->
+<!--
+  CONFIGURACIÓN DEL FORMULARIO:
+  Este formulario usa Formspree (formspree.io) para enviar los datos a tu correo.
+  Pasos:
+  1. Crea una cuenta gratuita en formspree.io
+  2. Crea un nuevo form y copia tu Form ID (ej: xpwzabcd)
+  3. Reemplaza "YOUR_FORM_ID" en el action de abajo con tu ID real
+  Si prefieres usar Wix Forms nativo, el diseñador puede recrear este formulario
+  directamente en el editor de Wix con los mismos campos.
+-->
+<div class="form-section">
+  <div class="inner">
+    <div class="section-eyebrow">Tell Us About Your Case</div>
+    <h2>Want to know what your legal process looks like<br>based on your nationality?</h2>
+    <p class="form-sub">Fill in the details below and we'll reach out with a free, personalized overview — no commitment required.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <!-- Hidden field for Formspree subject -->
+      <input type="hidden" name="_subject" value="New inquiry — FSC Amparo page">
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="first_name" placeholder="Jane" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="last_name" placeholder="Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <div class="phone-row">
+            <input type="text" class="phone-code" name="phone_code" placeholder="+1" maxlength="5">
+            <input type="tel" class="phone-num" id="phone" name="phone_number" placeholder="555 000 0000" required>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="family-type">Family Type</label>
+          <div class="select-wrap">
+            <select id="family-type" name="family_type" required>
+              <option value="" disabled selected>Select your family type</option>
+              <option value="same-sex">Same-Sex Couple</option>
+              <option value="single-parent">Single Parent</option>
+              <option value="heterosexual">Heterosexual Couple</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="program">Program of Interest</label>
+          <div class="select-wrap">
+            <select id="program" name="program" required>
+              <option value="" disabled selected>Select a program</option>
+              <option value="fet">FET — Frozen Embryo Transfer</option>
+              <option value="full-ivf">Full IVF Program</option>
+              <option value="double">Double Program</option>
+              <option value="guaranteed">Guaranteed Program</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="nationality">Nationality of the Parent Providing Gametes (Sperm or Eggs)</label>
+          <input type="text" id="nationality" name="gamete_provider_nationality" placeholder="e.g. American, Canadian, French…" required>
+        </div>
+
+        <!-- RESIDENCE AUTOCOMPLETE -->
+        <div class="form-group full">
+          <label for="city-search">Current City of Residence</label>
+          <div class="autocomplete-wrap">
+            <input type="text" id="city-search" name="city" placeholder="Start typing your city…" autocomplete="off" required>
+            <ul class="autocomplete-dropdown" id="city-dropdown"></ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="state-field">State / Province</label>
+          <input type="text" id="state-field" name="state" placeholder="Auto-filled when you select a city" readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="country-field">Country</label>
+          <input type="text" id="country-field" name="country" placeholder="Auto-filled when you select a city" readonly>
+        </div>
+
+        <div class="full">
+          <button type="submit" class="form-submit">
+             Send My Information — I'd Like a Free Overview
+          </button>
+          <p class="form-note">We respond within 24 hours. Your information is never shared with third parties.</p>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún · <a href="FSC_LandingPage.html">Back to main page</a> · <a href="https://wa.me/529843974122">WhatsApp</a></p>
+</footer>
+
+<script>
+  // Hamburger nav
+  const toggle = document.getElementById('navToggle');
+  const nav    = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  document.addEventListener('click', e => {
+    if (!nav.contains(e.target)) nav.classList.remove('open');
+  });
+</script>
+<script>
+(function () {
+  const input    = document.getElementById('city-search');
+  const dropdown = document.getElementById('city-dropdown');
+  const stateEl  = document.getElementById('state-field');
+  const countryEl= document.getElementById('country-field');
+
+  let debounceTimer;
+
+  input.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    const query = this.value.trim();
+
+    if (query.length < 3) {
+      closeDropdown();
+      return;
+    }
+
+    // Show loading
+    dropdown.innerHTML = '<li class="autocomplete-loading">Searching…</li>';
+    dropdown.classList.add('open');
+
+    debounceTimer = setTimeout(() => fetchLocations(query), 350);
+  });
+
+  async function fetchLocations(query) {
+    try {
+      const url = `https://nominatim.openstreetmap.org/search?` +
+        `q=${encodeURIComponent(query)}&format=json&addressdetails=1&limit=6` +
+        `&featuretype=city,town,village&accept-language=en`;
+
+      const res  = await fetch(url, { headers: { 'Accept-Language': 'en' } });
+      const data = await res.json();
+
+      if (!data.length) {
+        dropdown.innerHTML = '<li class="autocomplete-loading">No results found.</li>';
+        return;
+      }
+
+      dropdown.innerHTML = '';
+      data.forEach(place => {
+        const addr    = place.address || {};
+        const city    = addr.city || addr.town || addr.village || addr.municipality || place.name;
+        const state   = addr.state || addr.region || addr.county || '';
+        const country = addr.country || '';
+
+        if (!city || !country) return;
+
+        const li = document.createElement('li');
+        li.className = 'autocomplete-item';
+        li.innerHTML = `<strong>${city}</strong> <span>${state ? state + ', ' : ''}${country}</span>`;
+
+        li.addEventListener('mousedown', (e) => {
+          e.preventDefault(); // prevent blur before click
+          input.value    = city;
+          stateEl.value  = state;
+          countryEl.value = country;
+          closeDropdown();
+        });
+
+        dropdown.appendChild(li);
+      });
+
+      dropdown.classList.add('open');
+
+    } catch (err) {
+      dropdown.innerHTML = '<li class="autocomplete-loading">Connection error. Please type your city manually.</li>';
+    }
+  }
+
+  function closeDropdown() {
+    dropdown.classList.remove('open');
+    dropdown.innerHTML = '';
+  }
+
+  // Close on click outside
+  document.addEventListener('click', function (e) {
+    if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+      closeDropdown();
+    }
+  });
+
+  // Keyboard navigation
+  input.addEventListener('keydown', function (e) {
+    const items = dropdown.querySelectorAll('.autocomplete-item');
+    const active = dropdown.querySelector('.autocomplete-item.active');
+    let idx = Array.from(items).indexOf(active);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (active) active.classList.remove('active');
+      idx = (idx + 1) % items.length;
+      items[idx]?.classList.add('active');
+      items[idx]?.scrollIntoView({ block: 'nearest' });
+
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (active) active.classList.remove('active');
+      idx = (idx - 1 + items.length) % items.length;
+      items[idx]?.classList.add('active');
+      items[idx]?.scrollIntoView({ block: 'nearest' });
+
+    } else if (e.key === 'Enter' && active) {
+      e.preventDefault();
+      active.dispatchEvent(new MouseEvent('mousedown'));
+
+    } else if (e.key === 'Escape') {
+      closeDropdown();
+    }
+  });
+})();
+</script>
+</body>
+</html>

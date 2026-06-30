@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIV Programs | Fertility Solutions Center Cancún</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--purple:#7B68AE;--purple2:#6657A0;--dark:#3D2C6E;--navy:#2D1F5E;--light:#F4F1FA;--gray:#F8F7FC;--text:#2C2C2C;--soft:#4A4A6A;--muted:#6B7280;--white:#FFFFFF;--border:#E2DCF0;--radius:12px;--shadow:0 4px 28px rgba(61,44,110,.10);}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.65;}
+nav{position:sticky;top:0;z-index:200;background:#fff;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:140px;border-bottom:1px solid #E2DCF0;box-shadow:0 2px 16px rgba(61,44,110,.07);}
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;}
+.nav-logo{height:44px;filter:invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6);}
+.nav-menu{display:flex;align-items:center;gap:6px;}
+.nav-menu>li{list-style:none;position:relative;}
+.nav-menu>li>a{color:#4A4A6A;text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:4px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{color:#7B68AE;background:#F4F1FA;}
+.nav-menu>li>a .arrow{font-size:.65rem;opacity:.6;}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid #E2DCF0;border-radius:12px;box-shadow:0 4px 28px rgba(61,44,110,.10);min-width:190px;list-style:none;padding:6px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:300;}
+.has-dropdown:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-dropdown li a{display:block;padding:10px 18px;font-size:.86rem;color:#4A4A6A;text-decoration:none;transition:background .15s,color .15s;}
+.nav-dropdown li a:hover{background:#F4F1FA;color:#7B68AE;}
+.nav-dropdown li+li{border-top:1px solid #E2DCF0;}
+.nav-cta{background:#7B68AE;color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:600;font-size:.86rem;text-decoration:none;transition:background .2s;white-space:nowrap;margin-left:8px;}
+.nav-cta:hover{background:#6657A0;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:#3D2C6E;border-radius:2px;transition:all .3s;}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+nav.open .nav-toggle span:nth-child(2){opacity:0;}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+nav.open .nav-menu{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:140px;left:0;right:0;background:#fff;border-bottom:1px solid #E2DCF0;padding:16px 5% 20px;gap:2px;box-shadow:0 8px 24px rgba(61,44,110,.1);}
+nav.open .nav-menu>li{width:100%;}
+nav.open .nav-menu>li>a{padding:10px 0;border-radius:0;}
+nav.open .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:3px solid #E2DCF0;border-radius:0;padding:4px 0 4px 12px;margin-top:2px;}
+nav.open .nav-dropdown li a{padding:8px 12px;}
+@media(max-width:860px){.nav-toggle{display:flex;}.nav-menu{display:none;}.nav-cta{font-size:.8rem;padding:9px 14px;}}
+.page-hero{background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);padding:88px 6% 80px;text-align:center;}
+.page-eyebrow{font-size:.75rem;font-weight:700;color:#C9BFED;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:16px;}
+.page-hero h1{font-size:clamp(1.9rem,3vw,2.8rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:18px;}
+.page-hero h1 em{font-style:normal;color:#C9BFED;}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.72);max-width:600px;margin:0 auto;line-height:1.75;}
+.placeholder{padding:80px 6%;max-width:900px;margin:0 auto;text-align:center;}
+.placeholder-box{background:var(--gray);border:2px dashed var(--border);border-radius:16px;padding:60px 40px;}
+.placeholder-box p{color:var(--muted);font-size:.95rem;line-height:1.7;margin-bottom:8px;}
+.placeholder-box strong{color:var(--dark);}
+.btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;padding:12px 26px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:background .2s;margin-top:28px;}
+.btn-main:hover{background:var(--purple2);}
+</style>
+</head>
+<body>
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" style="height:144px;width:auto;display:block;" alt="Fertility Solutions Center">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+<div class="page-hero">
+  <div class="page-eyebrow">Surrogacy & HIV</div>
+  <h1>Having a Family When One or Both <em>Parents Are HIV+</em></h1>
+  <p>A complete surrogacy program is possible for HIV+ intended parents. Here's how we approach it medically, legally, and with the care this topic deserves.</p>
+</div>
+<div class="placeholder">
+  <div class="placeholder-box">
+    <p><strong> Content for this section is being developed.</strong></p>
+    <p>This page will contain: HIV Programs. The design structure and brand elements are ready for the Wix designer to build on.</p>
+    <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="btn-main"> Free Consultation While This Page Is Ready</a>
+  </div>
+</div>
+<footer style="background:#3D2C6E;padding:28px 6%;text-align:center;color:rgba(255,255,255,.45);font-size:.82rem;">
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html" style="color:rgba(255,255,255,.55);text-decoration:none;">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122" style="color:rgba(255,255,255,.55);text-decoration:none;">WhatsApp</a></p>
+</footer>
+<script>
+  const t=document.getElementById("navToggle"),n=document.getElementById("mainNav");
+  t.addEventListener("click",()=>n.classList.toggle("open"));
+  document.addEventListener("click",e=>{if(!n.contains(e.target))n.classList.remove("open");});
+</script>
+</body>
+</html>

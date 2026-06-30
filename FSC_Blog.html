@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Fertility Solutions Center Cancún</title>
+<meta name="description" content="Articles, guides, and honest answers to the questions people ask before and during a surrogacy program in Mexico.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--purple:#7B68AE;--purple2:#6657A0;--dark:#3D2C6E;--navy:#2D1F5E;--light:#F4F1FA;--gray:#F8F7FC;--text:#2C2C2C;--soft:#4A4A6A;--muted:#6B7280;--white:#FFFFFF;--border:#E2DCF0;--radius:12px;--shadow:0 4px 28px rgba(61,44,110,.10);}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.65;}
+nav{position:sticky;top:0;z-index:200;background:#fff;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:140px;border-bottom:1px solid #E2DCF0;box-shadow:0 2px 16px rgba(61,44,110,.07);}
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;}
+.nav-menu{display:flex;align-items:center;gap:6px;}
+.nav-menu>li{list-style:none;position:relative;}
+.nav-menu>li>a{color:#4A4A6A;text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:4px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{color:#7B68AE;background:#F4F1FA;}
+.nav-menu>li>a .arrow{font-size:.65rem;opacity:.6;}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid #E2DCF0;border-radius:12px;box-shadow:0 4px 28px rgba(61,44,110,.10);min-width:190px;list-style:none;padding:6px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:300;}
+.has-dropdown:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-dropdown li a{display:block;padding:10px 18px;font-size:.86rem;color:#4A4A6A;text-decoration:none;transition:background .15s,color .15s;}
+.nav-dropdown li a:hover{background:#F4F1FA;color:#7B68AE;}
+.nav-dropdown li+li{border-top:1px solid #E2DCF0;}
+.nav-cta{background:#7B68AE;color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:600;font-size:.86rem;text-decoration:none;transition:background .2s;white-space:nowrap;margin-left:8px;}
+.nav-cta:hover{background:#6657A0;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:#3D2C6E;border-radius:2px;transition:all .3s;}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+nav.open .nav-toggle span:nth-child(2){opacity:0;}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+nav.open .nav-menu{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:140px;left:0;right:0;background:#fff;border-bottom:1px solid #E2DCF0;padding:16px 5% 20px;gap:2px;box-shadow:0 8px 24px rgba(61,44,110,.1);}
+nav.open .nav-menu>li{width:100%;}
+nav.open .nav-menu>li>a{padding:10px 0;border-radius:0;}
+nav.open .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:3px solid #E2DCF0;border-radius:0;padding:4px 0 4px 12px;margin-top:2px;}
+nav.open .nav-dropdown li a{padding:8px 12px;}
+@media(max-width:860px){.nav-toggle{display:flex;}.nav-menu{display:none;}.nav-cta{font-size:.8rem;padding:9px 14px;}}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);padding:88px 6% 80px;text-align:center;}
+.page-eyebrow{font-size:.75rem;font-weight:700;color:#C9BFED;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:16px;}
+.page-hero h1{font-size:clamp(1.9rem,3vw,2.8rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:18px;}
+.page-hero h1 em{font-style:normal;color:#C9BFED;}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.72);max-width:600px;margin:0 auto;line-height:1.75;}
+
+/* BLOG GRID */
+.blog-section{padding:72px 6% 96px;}
+.blog-inner{max-width:1080px;margin:0 auto;}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.blog-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 8px 40px rgba(61,44,110,.14);}
+.blog-card-img{height:200px;overflow:hidden;}
+.blog-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s;}
+.blog-card:hover .blog-card-img img{transform:scale(1.04);}
+.blog-card-img.no-img{background:linear-gradient(135deg,var(--dark),var(--purple));display:flex;align-items:center;justify-content:center;}
+.blog-card-img.no-img span{font-size:2.5rem;}
+.blog-card-body{padding:28px 26px 32px;flex:1;display:flex;flex-direction:column;}
+.blog-tag{display:inline-block;background:var(--light);color:var(--purple);font-size:.68rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:14px;}
+.blog-card-body h2{font-size:1.05rem;font-weight:800;color:var(--dark);line-height:1.35;margin-bottom:12px;}
+.blog-card-body p{font-size:.88rem;color:var(--soft);line-height:1.7;flex:1;margin-bottom:20px;}
+.blog-read{display:inline-flex;align-items:center;gap:6px;color:var(--purple);font-size:.86rem;font-weight:700;text-decoration:none;transition:gap .2s;}
+.blog-read:hover{gap:10px;}
+.blog-meta{font-size:.76rem;color:var(--muted);margin-top:auto;padding-top:16px;border-top:1px solid var(--border);}
+
+/* FEATURED (first card) */
+.blog-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.blog-card.featured .blog-card-img{height:100%;min-height:260px;}
+.blog-card.featured .blog-card-body{padding:40px 40px;}
+.blog-card.featured h2{font-size:1.3rem;}
+
+@media(max-width:860px){
+  .blog-grid{grid-template-columns:1fr;}
+  .blog-card.featured{grid-template-columns:1fr;}
+  .blog-card.featured .blog-card-img{height:200px;}
+}
+
+/* NEWSLETTER */
+.newsletter{background:var(--gray);padding:64px 6%;text-align:center;border-top:1px solid var(--border);}
+.newsletter h3{font-size:1.2rem;font-weight:800;color:var(--dark);margin-bottom:10px;}
+.newsletter p{font-size:.94rem;color:var(--soft);max-width:480px;margin:0 auto 28px;line-height:1.7;}
+.nl-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+.nl-form input{flex:1;min-width:200px;padding:12px 16px;border:1.5px solid var(--border);border-radius:8px;font-size:.92rem;color:var(--text);outline:none;transition:border-color .2s;}
+.nl-form input:focus{border-color:var(--purple);}
+.nl-form button{background:var(--purple);color:#fff;border:none;padding:12px 22px;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer;transition:background .2s;}
+.nl-form button:hover{background:var(--purple2);}
+
+footer{background:#3D2C6E;padding:28px 6%;text-align:center;color:rgba(255,255,255,.45);font-size:.82rem;}
+footer a{color:rgba(255,255,255,.55);text-decoration:none;}
+</style>
+</head>
+<body>
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" alt="Fertility Solutions Center" style="height:144px;width:auto;display:block;">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html" class="active">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Resources & Guides</div>
+  <h1>Real Information for People <em>Researching Surrogacy</em></h1>
+  <p>Articles and honest answers to the questions people ask before and during a surrogacy program in Mexico. Written by the team that works these programs every day.</p>
+</div>
+
+<div class="blog-section">
+  <div class="blog-inner">
+    <div class="blog-grid">
+
+      <!-- FEATURED ARTICLE -->
+      <a href="FSC_Blog_Amparo.html" class="blog-card featured" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img">
+          <img src="blog-amparo-legal.jpg" alt="Surrogacy legal document signing">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">Legal Process</span>
+          <h2>What Is the Amparo Process — and Why It's the Only Safe Way to Do Surrogacy in Mexico</h2>
+          <p>The Amparo is a federal court order that puts the intended parents' names on the birth certificate from day one — with no surrogate listed, no amendment needed, no legal gap. Here's how it works and why the alternative carries real risk.</p>
+          <span class="blog-read">Read article →</span>
+          <div class="blog-meta">8 min read · Legal Guide</div>
+        </div>
+      </a>
+
+      <!-- ARTICLE 2 -->
+      <a href="FSC_Blog_Surrogacy_Mexico.html" class="blog-card" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img">
+          <img src="nathan-dumlao-Wr3comVZJxU-unsplash.jpg" alt="Family with surrogate">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">Legal Guide</span>
+          <h2>Surrogacy in Mexico: What's Legal, What's Not, and What Nobody Tells You</h2>
+          <p>Mexico has no single federal surrogacy law. What that means for intended parents — which states allow it, what protections actually exist, and the specific questions to ask before signing with any agency.</p>
+          <span class="blog-read">Read article →</span>
+          <div class="blog-meta">9 min read · Surrogacy in Mexico</div>
+        </div>
+      </a>
+
+      <!-- ARTICLE 3 -->
+      <a href="FSC_Blog_Single_Dads.html" class="blog-card" style="text-decoration:none;color:inherit;">
+        <div class="blog-card-img">
+          <img src="family-single-dad-stroller2.jpg" alt="Single father with his child">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">Single Parents</span>
+          <h2>Surrogacy as a Single Father: What the Process Actually Looks Like</h2>
+          <p>Single men choosing surrogacy are not an exception — they're a significant and growing part of the families who do this. An honest look at the medical process, the legal outcome, and what experienced single fathers say about the journey.</p>
+          <span class="blog-read">Read article →</span>
+          <div class="blog-meta">8 min read · Single Parent Guide</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="newsletter">
+  <h3>New articles, when they're ready.</h3>
+  <p>No weekly newsletters. When we publish something worth reading, we'll send it.</p>
+  <form class="nl-form" onsubmit="return false;">
+    <input type="email" placeholder="your@email.com">
+    <button type="submit">Notify me</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122">WhatsApp</a></p>
+</footer>
+<script>
+  const t=document.getElementById("navToggle"),n=document.getElementById("mainNav");
+  t.addEventListener("click",()=>n.classList.toggle("open"));
+  document.addEventListener("click",e=>{if(!n.contains(e.target))n.classList.remove("open");});
+</script>
+</body>
+</html>

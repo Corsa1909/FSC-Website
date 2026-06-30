@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs & Costs | Fertility Solutions Center Cancún</title>
+<meta name="description" content="FET, Full IVF, Double, and Guaranteed surrogacy programs in Cancún. Every program includes the Amparo legal process and a dedicated coordination team.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --purple:#7B68AE;--purple2:#6657A0;--dark:#3D2C6E;--navy:#2D1F5E;
+  --light:#F4F1FA;--gray:#F8F7FC;--text:#2C2C2C;--soft:#4A4A6A;
+  --muted:#6B7280;--white:#FFFFFF;--border:#E2DCF0;
+  --green:#25D366;--radius:12px;--shadow:0 4px 28px rgba(61,44,110,.10);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.65;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:#fff;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:140px;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(61,44,110,.07);}
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;}
+.nav-logo{height:44px;filter:invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6);}
+.nav-menu{display:flex;align-items:center;gap:6px;}
+.nav-menu>li{list-style:none;position:relative;}
+.nav-menu>li>a{color:var(--soft);text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:4px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{color:var(--purple);background:var(--light);}
+.nav-menu>li>a .arrow{font-size:.65rem;opacity:.6;}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);min-width:190px;list-style:none;padding:6px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:300;}
+.has-dropdown:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-dropdown li a{display:block;padding:10px 18px;font-size:.86rem;color:var(--soft);text-decoration:none;transition:background .15s,color .15s;}
+.nav-dropdown li a:hover{background:var(--light);color:var(--purple);}
+.nav-dropdown li+li{border-top:1px solid var(--border);}
+.nav-cta{background:var(--purple);color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:600;font-size:.86rem;text-decoration:none;transition:background .2s;white-space:nowrap;margin-left:8px;}
+.nav-cta:hover{background:var(--purple2);}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s;}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+nav.open .nav-toggle span:nth-child(2){opacity:0;}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+nav.open .nav-menu{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:140px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:16px 5% 20px;gap:2px;box-shadow:0 8px 24px rgba(61,44,110,.1);}
+nav.open .nav-menu>li{width:100%;}
+nav.open .nav-menu>li>a{padding:10px 0;border-radius:0;}
+nav.open .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:3px solid var(--border);border-radius:0;padding:4px 0 4px 12px;margin-top:2px;}
+nav.open .nav-dropdown li a{padding:8px 12px;}
+@media(max-width:860px){.nav-toggle{display:flex;}.nav-menu{display:none;}.nav-cta{font-size:.8rem;padding:9px 14px;}}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);padding:80px 6% 72px;text-align:center;}
+.page-eyebrow{font-size:.75rem;font-weight:700;color:#C9BFED;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px;}
+.page-hero h1{font-size:clamp(1.9rem,3vw,2.6rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px;}
+.page-hero h1 em{font-style:normal;color:#C9BFED;}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.72);max-width:580px;margin:0 auto;line-height:1.75;}
+
+/* SECTION COMMON */
+section{padding:80px 6%;}
+.section-inner{max-width:1080px;margin:0 auto;}
+.section-eyebrow{font-size:.72rem;font-weight:700;color:var(--purple);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px;}
+.stitle{font-size:clamp(1.55rem,2.5vw,2rem);font-weight:800;color:var(--dark);line-height:1.25;margin-bottom:14px;}
+.sdesc{font-size:.97rem;color:var(--soft);max-width:680px;line-height:1.75;margin-bottom:52px;}
+
+/* PROGRAMS GRID */
+.prog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;align-items:start;}
+.prog-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;}
+.prog-head{background:var(--light);padding:28px 30px;border-bottom:1px solid var(--border);}
+.prog-tag{display:inline-block;background:var(--purple);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:12px;}
+.prog-head h3{font-size:1.15rem;font-weight:800;color:var(--dark);line-height:1.3;}
+.prog-head .prog-for{font-size:.82rem;color:var(--muted);margin-top:4px;}
+.prog-body{padding:28px 30px;flex:1;display:flex;flex-direction:column;}
+.prog-body p{font-size:.9rem;color:var(--soft);line-height:1.7;margin-bottom:22px;}
+.prog-features{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:28px;flex:1;}
+.prog-features li{display:flex;gap:10px;font-size:.88rem;color:var(--text);}
+.prog-features li::before{content:"";color:var(--purple);font-weight:800;flex-shrink:0;}
+.prog-ask{
+  display:block;text-align:center;background:var(--purple);color:var(--white);
+  padding:12px 16px;border-radius:8px;font-weight:700;font-size:.92rem;
+  text-decoration:none;transition:background .2s;
+}
+.prog-ask:hover{background:var(--purple2);}
+.prog-ask.outline{background:transparent;border:1.5px solid var(--purple);color:var(--purple);}
+.prog-ask.outline:hover{background:var(--purple);color:var(--white);}
+
+/* PHOTO STRIPS */
+.photo-strip{display:grid;gap:6px;padding:0;}
+.photo-strip.three{grid-template-columns:repeat(3,1fr);}
+.photo-strip.one{grid-template-columns:1fr;}
+.photo-strip img{width:100%;height:260px;object-fit:cover;display:block;}
+.photo-strip.one img{height:340px;object-fit:cover;object-position:center 35%;}
+@media(max-width:800px){.photo-strip.three{grid-template-columns:1fr;}.photo-strip img,.photo-strip.one img{height:200px;}}
+
+/* INCLUDED IN ALL */
+.included-section{background:var(--gray);}
+.included-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:0;}
+.inc-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:28px 24px;}
+.inc-icon{font-size:1.8rem;margin-bottom:14px;}
+.inc-card h4{font-size:.95rem;font-weight:800;color:var(--dark);margin-bottom:8px;}
+.inc-card p{font-size:.86rem;color:var(--muted);line-height:1.65;}
+
+/* HOW IT WORKS */
+.process-section{background:var(--white);}
+.process-steps{display:flex;flex-direction:column;gap:0;max-width:760px;margin:0 auto;}
+.pstep{display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:flex-start;padding-bottom:36px;position:relative;}
+.pstep:not(:last-child)::after{content:'';position:absolute;left:27px;top:56px;bottom:0;width:2px;background:var(--border);}
+.pstep-num{width:56px;height:56px;border-radius:50%;background:var(--purple);color:#fff;font-size:1.1rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1;}
+.pstep-content{padding-top:14px;}
+.pstep-content h4{font-size:1rem;font-weight:800;color:var(--dark);margin-bottom:6px;}
+.pstep-content p{font-size:.9rem;color:var(--soft);line-height:1.7;}
+
+/* COST NOTE */
+.cost-note{background:linear-gradient(135deg,var(--navy),var(--dark));border-radius:20px;padding:52px 56px;text-align:center;margin-top:64px;}
+.cost-note h3{font-size:1.3rem;font-weight:800;color:#fff;margin-bottom:12px;}
+.cost-note p{font-size:.95rem;color:rgba(255,255,255,.72);max-width:540px;margin:0 auto 32px;line-height:1.75;}
+.btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;padding:12px 26px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:background .2s;}
+.btn-main:hover{background:var(--purple2);}
+
+/* FOOTER */
+footer{background:var(--dark);padding:28px 6%;text-align:center;color:rgba(255,255,255,.45);font-size:.82rem;}
+footer a{color:rgba(255,255,255,.55);text-decoration:none;}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .prog-grid{grid-template-columns:1fr;}
+  .included-grid{grid-template-columns:1fr;}
+  .cost-note{padding:36px 28px;}
+  .prog-body[style*="grid-template-columns"]{display:block;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" alt="Fertility Solutions Center" style="height:144px;width:auto;display:block;">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html" class="active">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-eyebrow">Programs & Costs</div>
+  <h1>Find the Program That Fits <em>Your Situation</em></h1>
+  <p>Every program includes the full Amparo legal process, a dedicated coordinator, and medical oversight. We'll tell you which fits your case on the first call.</p>
+</div>
+
+<!-- PROGRAMS -->
+<section>
+  <div class="section-inner">
+    <div class="section-eyebrow">Our Programs</div>
+    <h2 class="stitle">Four Paths to Parenthood</h2>
+    <p class="sdesc">Costs vary by program, medical profile, and individual factors. We share full breakdowns in the consultation — not because we hide numbers, but because quoting a generic price to someone with a specific situation is not honest.</p>
+
+    <div class="prog-grid">
+
+
+      <!-- FULL IVF -->
+      <div class="prog-card">
+        <div class="prog-head">
+          <div class="prog-tag">Full IVF Program</div>
+          <h3>Complete IVF Surrogacy</h3>
+          <div class="prog-for">For heterosexual, bisexual, or single intended parents</div>
+        </div>
+        <div class="prog-body">
+          <p>Everything coordinated by one team — embryo creation, surrogate, pregnancy, legal process, and birth registration. From your first appointment to the day you fly home.</p>
+          <ul class="prog-features">
+            <li>Semen sample collection</li>
+            <li>Access to our extensive egg donor database — genetic profiles, medical history, and broad family background profiles</li>
+            <li>Embryo creation</li>
+            <li>Two embryo transfers included in the program</li>
+            <li>Surrogate matching with no long wait times</li>
+            <li>Standard prenatal care — comprehensive coverage</li>
+            <li>Full transparency in surrogate compensation — direct payments between the surrogate and the intended parents</li>
+            <li>Private hospital birth with kangaroo care</li>
+            <li>Legal process starts on day one, runs parallel to the medical program</li>
+            <li>Birth certificate with your name(s) only — through Mexico's Judicial Protection process (Amparo), a federal court order, not an administrative workaround</li>
+          </ul>
+          <div style="background:var(--light);border-radius:8px;padding:14px 18px;margin-bottom:22px;text-align:center;">
+            <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Starting at</div>
+            <div style="font-size:1.5rem;font-weight:800;color:var(--dark);">$59,300 USD</div>
+            <div style="font-size:.8rem;color:var(--muted);">Payment by milestone · Full breakdown in your consultation</div>
+          </div>
+          <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="prog-ask">Talk Through This Program</a>
+        </div>
+      </div>
+
+      <!-- DOUBLE -->
+      <div class="prog-card">
+        <div class="prog-head">
+          <div class="prog-tag">Double Program</div>
+          <h3>Double Surrogacy</h3>
+          <div class="prog-for">Two simultaneous journeys, one coordinated program</div>
+        </div>
+        <div class="prog-body">
+          <p>For couples who want to pursue parenthood through two surrogates at once — two embryo transfers, two pregnancies, coordinated within a single program structure by the same team.</p>
+          <ul class="prog-features">
+            <li>Two surrogate mothers with full screenings</li>
+            <li>Two parallel embryo transfers</li>
+            <li>All Full IVF Program components × 2</li>
+            <li>Full Amparo process for both births</li>
+            <li>Coordinated delivery planning</li>
+            <li>Two birth certificates in your name(s)</li>
+          </ul>
+          <a href="https://wa.me/529843974122?text=I%20have%20questions%20about%20the%20Double%20Surrogacy%20Program." target="_blank" class="prog-ask outline">Ask About This Program</a>
+        </div>
+      </div>
+
+      <!-- PREEXISTING FET -->
+      <div class="prog-card" style="border:2px solid var(--purple);grid-column:1/-1;">
+        <div class="prog-head" style="background:var(--dark);border-bottom:none;">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4px;">
+            <div class="prog-tag" style="background:rgba(255,255,255,.15);color:#C9BFED;">Preexisting Embryo Transfer</div>
+            <div class="prog-tag" style="background:rgba(255,255,255,.25);color:#fff;">FET Program</div>
+          </div>
+          <h3 style="color:#fff;font-size:1.3rem;">You already have embryos.<br>We'll take it from here.</h3>
+          <div class="prog-for" style="color:rgba(255,255,255,.6);">For families with embryos stored at any clinic — in Mexico or abroad</div>
+        </div>
+        <div class="prog-body" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+          <div>
+            <p>You've already done the IVF work. Your embryos exist. What you need now is a surrogate, a medical team to carry the pregnancy, a legal process, and one team to coordinate all of it — from embryo transport to the day you fly home.</p>
+            <p style="margin-top:12px;font-size:.88rem;color:var(--muted);">Also the right program for families adding a second child from embryos already preserved — and for couples looking for a destination with family-friendly legal policies.</p>
+          </div>
+          <div>
+            <ul class="prog-features">
+              <li>Embryo transport coordination from any clinic, in Mexico or abroad</li>
+              <li>Surrogate matching with no long wait times</li>
+              <li>Endometrial preparation and up to two embryo transfers</li>
+              <li>Standard prenatal care — comprehensive coverage</li>
+              <li>Full transparency in surrogate compensation — direct payments between the surrogate and the intended parents</li>
+              <li>Private hospital birth with kangaroo care</li>
+              <li>Birth certificate with your name(s) only — through Mexico's Judicial Protection process (Amparo), a federal court order, not an administrative workaround</li>
+            </ul>
+            <div style="background:var(--light);border-radius:8px;padding:14px 18px;margin:16px 0 8px;text-align:center;">
+              <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Total investment</div>
+              <div style="font-size:1.5rem;font-weight:800;color:var(--dark);">$65,127 USD</div>
+              <div style="font-size:.8rem;color:var(--muted);">6 payments tied to medical milestones · Full breakdown in your consultation</div>
+            </div>
+            <a href="https://wa.me/529843974122?text=I%20have%20embryos%20stored%20and%20want%20to%20learn%20about%20the%20FET%20program." target="_blank" class="prog-ask" style="margin-top:8px;">Ask About This Program</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUARANTEED -->
+      <div class="prog-card">
+        <div class="prog-head">
+          <div class="prog-tag">Guaranteed Program</div>
+          <h3>Guaranteed Live Birth</h3>
+          <div class="prog-for">For families who need certainty before they commit</div>
+        </div>
+        <div class="prog-body">
+          <p>A contractual commitment: your baby comes home within a maximum of 2 years from the creation of viable transferable embryos. If that commitment is not met, we refund your investment in full. The price never changes — regardless of how many transfers are needed.</p>
+          <ul class="prog-features">
+            <li>Semen sample collection, analysis &amp; cryopreservation</li>
+            <li>Access to our extensive international egg donor database — medical history, hereditary conditions, ancestral background, and donor childhood photos</li>
+            <li>Embryo creation</li>
+            <li>Unlimited embryo transfers included — no additional cost per attempt</li>
+            <li>Embryo cryopreservation — 1 year included</li>
+            <li>Surrogate matching with no long wait times</li>
+            <li>Standard prenatal care — comprehensive coverage</li>
+            <li>Full transparency in surrogate compensation — direct payments between the surrogate and the intended parents</li>
+            <li>Private hospital birth with kangaroo care</li>
+            <li>Birth certificate with your name(s) only — through Mexico's Judicial Protection process (Amparo), a federal court order, not an administrative workaround</li>
+          </ul>
+          <div style="background:var(--light);border-radius:8px;padding:14px 18px;margin:16px 0 8px;text-align:center;">
+            <div style="font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">Total investment</div>
+            <div style="font-size:1.5rem;font-weight:800;color:var(--dark);">$91,116 USD</div>
+            <div style="font-size:.8rem;color:var(--muted);">6 payments tied to medical milestones · Price never changes</div>
+          </div>
+          <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="prog-ask">Learn More in a Free Call</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OPTIONAL ENHANCEMENTS -->
+    <div style="margin-top:52px;background:var(--gray);border-radius:16px;padding:36px 40px;">
+      <div style="font-size:.72rem;font-weight:700;color:var(--purple);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px;">Optional Enhancements</div>
+      <h3 style="font-size:1.1rem;font-weight:800;color:var(--dark);margin-bottom:10px;">Some families choose to go further.</h3>
+      <p style="font-size:.92rem;color:var(--soft);line-height:1.75;max-width:680px;margin-bottom:22px;">These services are not part of the base program — they're additions families select based on their medical profile or personal preference. We'll walk through each one in the consultation so you can decide what's right for you.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;">
+          <div style="font-weight:700;color:var(--dark);font-size:.92rem;margin-bottom:4px;">PGT-A Genetic Testing</div>
+          <div style="font-size:.84rem;color:var(--soft);line-height:1.6;">Chromosomal screening of your embryos before transfer — identifies the healthiest for the best chance of success.</div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;">
+          <div style="font-weight:700;color:var(--dark);font-size:.92rem;margin-bottom:4px;">Prenatal Paternity Test</div>
+          <div style="font-size:.84rem;color:var(--soft);line-height:1.6;">Non-invasive confirmation of the genetic bond before the first trimester ends — no waiting until birth.</div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;">
+          <div style="font-weight:700;color:var(--dark);font-size:.92rem;margin-bottom:4px;">Third Embryo Transfer</div>
+          <div style="font-size:.84rem;color:var(--soft);line-height:1.6;">Pre-contract a third transfer at program start and lock in a reduced rate — available for Full IVF families.</div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px 20px;">
+          <div style="font-weight:700;color:var(--dark);font-size:.92rem;margin-bottom:4px;">Embryo Glue</div>
+          <div style="font-size:.84rem;color:var(--soft);line-height:1.6;">A hyaluronan-enriched transfer medium that may improve implantation rates — discussed with our medical team based on your case.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INCLUDED IN ALL PROGRAMS -->
+<section class="included-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Every Program Includes</div>
+    <h2 class="stitle">What's Always There — Regardless of Which Program You Choose</h2>
+    <p class="sdesc">These aren't add-ons. They're the foundation of how we work.</p>
+    <div class="included-grid">
+      <div class="inc-card">
+        <div class="inc-icon"></div>
+        <h4>Full Amparo Legal Process</h4>
+        <p>A federal court order that produces a birth certificate in your name(s) only. No surrogate listed. No legal ambiguity when you return home.</p>
+      </div>
+      <div class="inc-card">
+        <div class="inc-icon">‍</div>
+        <h4>Dedicated Case Coordinator</h4>
+        <p>One person who knows your case, answers your questions, and stays with you from matching through the day you bring your baby home.</p>
+      </div>
+      <div class="inc-card">
+        <div class="inc-icon"></div>
+        <h4>Private Hospital Birth</h4>
+        <p>Your baby is born in a private hospital in Cancún, with kangaroo care — immediate skin-to-skin contact between baby and intended parent(s).</p>
+      </div>
+      <div class="inc-card">
+        <div class="inc-icon"></div>
+        <h4>Medical &amp; Legal Coordination</h4>
+        <p>Our medical team and attorney Buenrostro work in parallel. You don't manage two separate teams — we do that for you.</p>
+      </div>
+      <div class="inc-card">
+        <div class="inc-icon"></div>
+        <h4>English-Language Support</h4>
+        <p>Every appointment, update, and document explained in English. You're never left translating medical or legal language on your own.</p>
+      </div>
+      <div class="inc-card">
+        <div class="inc-icon"></div>
+        <h4>Transparent Cost Structure</h4>
+        <p>Milestone-based payments, no hidden fees. You get a full breakdown before you commit to anything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">The Journey</div>
+    <h2 class="stitle">What the Process Actually Looks Like</h2>
+    <p class="sdesc">From your first conversation to the day you leave Mexico with your baby — an honest overview of each stage.</p>
+    <div class="process-steps">
+      <div class="pstep">
+        <div class="pstep-num">1</div>
+        <div class="pstep-content">
+          <h4>Free Consultation</h4>
+          <p>We walk through your situation together — your medical history, family configuration, budget range, and timeline. By the end, you'll know which program makes sense for your case and what to expect at every stage. No commitment required.</p>
+        </div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">2</div>
+        <div class="pstep-content">
+          <h4>Program Start &amp; Matching</h4>
+          <p>Once you're enrolled, we begin surrogate matching from our pre-screened pool. For IVF programs, you'll also select an egg donor from our database. We present profiles and you make the decision — we don't rush this step.</p>
+        </div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">3</div>
+        <div class="pstep-content">
+          <h4>IVF &amp; Embryo Transfer</h4>
+          <p>Our medical team manages stimulation, retrieval, fertilization, and embryo transfer at our partner clinic in Cancún. You'll receive updates at each milestone. For FET programs, this step begins with transport coordination.</p>
+        </div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">4</div>
+        <div class="pstep-content">
+          <h4>Pregnancy &amp; Legal in Parallel</h4>
+          <p>Once pregnancy is confirmed, full monitoring begins. At the same time, attorney Buenrostro initiates the Amparo pre-process. You receive regular updates throughout — you're never waiting without knowing why.</p>
+        </div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">5</div>
+        <div class="pstep-content">
+          <h4>Birth, Amparo &amp; Registration</h4>
+          <p>Your baby is born in a private hospital. The Amparo is granted and the birth certificate is issued in your name(s) only — typically within 2 weeks of birth. We guide you through the next steps for your home country's consulate process.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cost-note">
+      <h3>Ready to know what your specific program would look like?</h3>
+      <p>The first conversation is free. Bring your situation — we'll build the picture together and give you honest numbers before you decide anything.</p>
+      <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="btn-main"> Schedule Your Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122">WhatsApp</a> &nbsp;·&nbsp; <a href="mailto:info@fertilitysolutionscenter.com">Email</a></p>
+</footer>
+
+<script>
+  const t=document.getElementById("navToggle"),n=document.getElementById("mainNav");
+  t.addEventListener("click",()=>n.classList.toggle("open"));
+  document.addEventListener("click",e=>{if(!n.contains(e.target))n.classList.remove("open");});
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials | Fertility Solutions Center Cancún</title>
+<meta name="description" content="Real reviews from families who completed their surrogacy journey with Fertility Solutions Center in Cancún, Mexico.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --purple:#7B68AE;--purple2:#6657A0;--dark:#3D2C6E;--navy:#2D1F5E;
+  --light:#F4F1FA;--gray:#F8F7FC;--text:#2C2C2C;--soft:#4A4A6A;
+  --muted:#6B7280;--white:#FFFFFF;--border:#E2DCF0;
+  --radius:12px;--shadow:0 4px 28px rgba(61,44,110,.10);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.65;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:#fff;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:140px;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(61,44,110,.07);}
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;}
+.nav-logo{height:44px;filter:invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6);}
+.nav-menu{display:flex;align-items:center;gap:6px;}
+.nav-menu>li{list-style:none;position:relative;}
+.nav-menu>li>a{color:var(--soft);text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:4px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{color:var(--purple);background:var(--light);}
+.nav-menu>li>a .arrow{font-size:.65rem;opacity:.6;}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);min-width:190px;list-style:none;padding:6px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:300;}
+.has-dropdown:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-dropdown li a{display:block;padding:10px 18px;font-size:.86rem;color:var(--soft);text-decoration:none;transition:background .15s,color .15s;}
+.nav-dropdown li a:hover{background:var(--light);color:var(--purple);}
+.nav-dropdown li+li{border-top:1px solid var(--border);}
+.nav-cta{background:var(--purple);color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:600;font-size:.86rem;text-decoration:none;transition:background .2s;white-space:nowrap;margin-left:8px;}
+.nav-cta:hover{background:var(--purple2);}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s;}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+nav.open .nav-toggle span:nth-child(2){opacity:0;}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+nav.open .nav-menu{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:140px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:16px 5% 20px;gap:2px;box-shadow:0 8px 24px rgba(61,44,110,.1);}
+nav.open .nav-menu>li{width:100%;}
+nav.open .nav-menu>li>a{padding:10px 0;border-radius:0;}
+nav.open .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:3px solid var(--border);border-radius:0;padding:4px 0 4px 12px;margin-top:2px;}
+nav.open .nav-dropdown li a{padding:8px 12px;}
+@media(max-width:860px){.nav-toggle{display:flex;}.nav-menu{display:none;}.nav-cta{font-size:.8rem;padding:9px 14px;}}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);padding:80px 6% 72px;text-align:center;}
+.page-eyebrow{font-size:.75rem;font-weight:700;color:#C9BFED;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px;}
+.page-hero h1{font-size:clamp(1.9rem,3vw,2.6rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px;}
+.page-hero h1 em{font-style:normal;color:#C9BFED;}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.72);max-width:580px;margin:0 auto;line-height:1.75;}
+
+/* GOOGLE BADGE */
+.google-strip{background:var(--gray);border-bottom:1px solid var(--border);padding:20px 6%;text-align:center;}
+.google-strip p{font-size:.88rem;color:var(--muted);}
+.google-strip strong{color:var(--dark);}
+.stars{color:#F5A623;font-size:1.1rem;letter-spacing:2px;margin:0 6px;}
+
+/* TESTIMONIALS */
+section{padding:80px 6%;}
+.section-inner{max-width:1080px;margin:0 auto;}
+.section-eyebrow{font-size:.72rem;font-weight:700;color:var(--purple);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px;}
+.stitle{font-size:clamp(1.55rem,2.5vw,2rem);font-weight:800;color:var(--dark);line-height:1.25;margin-bottom:14px;}
+.sdesc{font-size:.97rem;color:var(--soft);max-width:680px;line-height:1.75;margin-bottom:52px;}
+
+.test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
+.test-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:36px 32px;box-shadow:var(--shadow);display:flex;flex-direction:column;}
+.test-card.featured{background:linear-gradient(135deg,var(--navy) 0%,var(--dark) 100%);border-color:transparent;color:#fff;}
+.test-stars{color:#F5A623;font-size:1rem;letter-spacing:1px;margin-bottom:20px;}
+.test-card.featured .test-stars{color:#F5C842;}
+blockquote{font-size:.95rem;line-height:1.8;color:var(--soft);font-style:italic;flex:1;margin-bottom:24px;}
+.test-card.featured blockquote{color:rgba(255,255,255,.82);}
+.test-author{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--border);margin-top:auto;}
+.test-card.featured .test-author{border-top-color:rgba(255,255,255,.15);}
+.test-avatar{width:44px;height:44px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:var(--purple);flex-shrink:0;}
+.test-card.featured .test-avatar{background:rgba(255,255,255,.15);color:#fff;}
+.test-name{font-weight:700;font-size:.9rem;color:var(--dark);}
+.test-card.featured .test-name{color:#fff;}
+.test-label{font-size:.78rem;color:var(--muted);}
+.test-card.featured .test-label{color:rgba(255,255,255,.55);}
+
+/* CTA */
+.cta-section{background:linear-gradient(160deg,var(--navy),var(--dark));text-align:center;padding:80px 6%;}
+.cta-section .page-eyebrow{color:#C9BFED;}
+.cta-section h2{font-size:clamp(1.55rem,2.5vw,2rem);font-weight:800;color:#fff;margin-bottom:14px;}
+.cta-section p{color:rgba(255,255,255,.72);font-size:.97rem;max-width:560px;margin:0 auto 36px;line-height:1.75;}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;padding:13px 28px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:background .2s;}
+.btn-main:hover{background:var(--purple2);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1.5px solid rgba(255,255,255,.35);color:rgba(255,255,255,.85);padding:13px 28px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:border-color .2s,color .2s;}
+.btn-ghost:hover{border-color:rgba(255,255,255,.65);color:#fff;}
+
+footer{background:var(--dark);padding:28px 6%;text-align:center;color:rgba(255,255,255,.45);font-size:.82rem;}
+footer a{color:rgba(255,255,255,.55);text-decoration:none;}
+
+@media(max-width:700px){.test-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" style="height:144px;width:auto;display:block;" alt="Fertility Solutions Center">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html" class="active">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-eyebrow">Testimonials</div>
+  <h1>From the Families <em>Who've Been Through It</em></h1>
+  <p>Surrogacy is one of the most profound journeys a family can take. These are the people we had the privilege of walking beside.</p>
+</div>
+
+<!-- GOOGLE BADGE -->
+<div class="google-strip">
+  <p><strong>Verified Google Reviews</strong> <span class="stars"></span> 5.0 · Every review comes from a family that completed their program with us</p>
+</div>
+
+<!-- VIDEO TESTIMONIALS -->
+<section style="background:var(--gray);padding:72px 6%;border-top:1px solid var(--border);">
+  <div style="max-width:1080px;margin:0 auto;">
+    <div class="section-eyebrow">Video Testimonials</div>
+    <h2 class="stitle" style="margin-bottom:40px;">Hear It From the Families</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow);">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <iframe src="https://www.youtube.com/embed/r6p2NyucONw" title="FSC Family Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+      </div>
+
+      <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow);">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <iframe src="https://www.youtube.com/embed/z8OiLAX_GeE" title="FSC Family Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+      </div>
+
+      <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow);">
+        <div style="position:relative;padding-bottom:56.25%;height:0;">
+          <iframe src="https://www.youtube.com/embed/eNjv6XOqtMk" title="FSC Family Testimonial 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="section-inner">
+    <div class="section-eyebrow">What Families Say</div>
+    <h2 class="stitle">Our Families</h2>
+    <p class="sdesc">Every family that walks through this process trusts us with something irreplaceable. Our commitment is to be there — through every step, every decision, every moment that matters.</p>
+
+    <div class="test-grid">
+
+      <!-- Daphne N. — featured -->
+      <div class="test-card featured">
+        <div class="test-stars"></div>
+        <blockquote>
+          "We are a returning family who worked with FSC for our second surrogacy journey, and once again, the experience was exceptional. From start to finish, the team demonstrated unmatched professionalism, compassion, and dedication. They kept us informed every step of the way, ensuring we felt supported and confident throughout the entire process. The medical team was outstanding — knowledgeable, attentive, and truly caring. The legal team was meticulous and efficient, handling all the paperwork seamlessly so we could focus on what mattered most: welcoming our new baby. What sets FSC apart is their personalized approach. They remembered everything about our journey and made us feel like family, not just clients. If you're considering surrogacy in Mexico, we highly recommend Fertility Solutions Center. They truly go above and beyond to make your dream of parenthood a reality."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">D</div>
+          <div>
+            <div class="test-name">Daphne N.</div>
+            <div class="test-label">Returning Family · 2nd Surrogacy</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Armando B. -->
+      <div class="test-card">
+        <div class="test-stars"></div>
+        <blockquote>
+          "My husband and I are proud twin dads and couldn't have done it without the guidance and support of FSC. They handled every detail with professionalism and warmth. The team was always available when we had questions, and the legal process was clear and well-managed from start to finish. We never felt like we were navigating this alone. From the very first call to the day we brought our boys home, FSC was with us every step of the way. For any same-sex couple considering surrogacy in Mexico, we would absolutely recommend them without hesitation."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">A</div>
+          <div>
+            <div class="test-name">Armando B.</div>
+            <div class="test-label">Same-Sex Couple · Twin Dads</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodrigo C. -->
+      <div class="test-card">
+        <div class="test-stars"></div>
+        <blockquote>
+          "My partner and I had our twin girls thanks to this amazing team. We can't thank them enough for the love and dedication they put into every step of the process. From the first consultation, we felt like we were in the right hands. The communication was always clear, timely, and honest — they never left us wondering what was happening next. The medical care for our surrogate was exceptional, and the legal process was smooth and well-explained. We're now a family of four because of FSC. For anyone considering this path, look no further."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">R</div>
+          <div>
+            <div class="test-name">Rodrigo C.</div>
+            <div class="test-label">Same-Sex Couple · Twin Dads</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mario G. -->
+      <div class="test-card">
+        <div class="test-stars"></div>
+        <blockquote>
+          "Choosing FSC for our surrogacy journey was the best decision we ever made. From the initial consultation to the birth of our daughter, the team was professional, kind, and incredibly supportive. They guided us through every step of the legal and medical process with transparency and care. What made the experience truly special was how personally invested the team became in our family's success. They weren't just managing a process — they were genuinely rooting for us. I would recommend FSC to anyone pursuing surrogacy in Mexico. They made what could have been an overwhelming process feel manageable and even joyful."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">M</div>
+          <div>
+            <div class="test-name">Mario G.</div>
+            <div class="test-label">Same-Sex Couple · 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kavlee P. -->
+      <div class="test-card">
+        <div class="test-stars"></div>
+        <blockquote>
+          "From start to finish, FSC was the best choice we could have made for our surrogacy journey. The process of becoming parents felt less daunting and more magical because of the level of care and support we received. Every single person on the team played a vital role, and every person was professional, empathetic, and dedicated. FSC took us from hopeful to parents, and for that we are forever grateful. If you are thinking about surrogacy in Mexico, this is your team."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">K</div>
+          <div>
+            <div class="test-name">Kavlee P.</div>
+            <div class="test-label">Los Angeles, USA · 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Will S. -->
+      <div class="test-card">
+        <div class="test-stars"></div>
+        <blockquote>
+          "As a single father, I had a lot of questions and more than a few fears going into this process. FSC answered every one of them — honestly, patiently, and without ever making me feel like an edge case. The team understood my situation from the start and made sure the legal process reflected that. My son is here now, and I am his father in every way — legally, medically, and completely. I can't put into words what FSC made possible for us. If you're a single parent considering this path, please reach out. This team will take care of you."
+        </blockquote>
+        <div class="test-author">
+          <div class="test-avatar">W</div>
+          <div>
+            <div class="test-name">Will S.</div>
+            <div class="test-label">Single Father · 2023</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- THANK YOU IMAGE -->
+<div style="background:transparent;padding:0;text-align:center;overflow:hidden;">
+  <img src="thank-you.png" alt="Thank You — For allowing us to be part of such a meaningful chapter in your journey" style="max-width:100%;width:100%;display:block;margin-top:-24%;margin-bottom:-24%;">
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="page-eyebrow">Your Story Starts Here</div>
+  <h2>Ready to Take the First Step?</h2>
+  <p>30 minutes. Free. No commitment — just your questions and our honest answers. Every one of these families started with exactly that call.</p>
+  <div class="cta-btns">
+    <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="btn-main"> Book Your Free Call</a>
+    <a href="https://wa.me/529843974122?text=Hi%2C%20I%20read%20your%20reviews%20and%20have%20some%20questions." target="_blank" class="btn-ghost"> Start on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122">WhatsApp</a> &nbsp;·&nbsp; <a href="mailto:info@fertilitysolutionscenter.com">Email</a></p>
+</footer>
+
+<script>
+  const t=document.getElementById("navToggle"),n=document.getElementById("mainNav");
+  t.addEventListener("click",()=>n.classList.toggle("open"));
+  document.addEventListener("click",e=>{if(!n.contains(e.target))n.classList.remove("open");});
+</script>
+</body>
+</html>

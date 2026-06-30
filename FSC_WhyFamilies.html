@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Families Choose Us | Fertility Solutions Center Cancún</title>
+<meta name="description" content="The honest questions to ask any surrogacy agency — and our honest answers. Plus the most common FAQ from families considering surrogacy in Mexico.">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --purple:#7B68AE;--purple2:#6657A0;--dark:#3D2C6E;--navy:#2D1F5E;
+  --light:#F4F1FA;--gray:#F8F7FC;--text:#2C2C2C;--soft:#4A4A6A;
+  --muted:#6B7280;--white:#FFFFFF;--border:#E2DCF0;
+  --radius:12px;--shadow:0 4px 28px rgba(61,44,110,.10);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.65;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:#fff;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:140px;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(61,44,110,.07);}
+.nav-logo-link{display:flex;align-items:center;text-decoration:none;}
+.nav-logo{height:44px;filter:invert(1) sepia(1) saturate(3) hue-rotate(220deg) brightness(.6);}
+.nav-menu{display:flex;align-items:center;gap:6px;}
+.nav-menu>li{list-style:none;position:relative;}
+.nav-menu>li>a{color:var(--soft);text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:4px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{color:var(--purple);background:var(--light);}
+.nav-menu>li>a .arrow{font-size:.65rem;opacity:.6;}
+.nav-dropdown{position:absolute;top:calc(100% + 8px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);min-width:190px;list-style:none;padding:6px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:300;}
+.has-dropdown:hover .nav-dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.nav-dropdown li a{display:block;padding:10px 18px;font-size:.86rem;color:var(--soft);text-decoration:none;transition:background .15s,color .15s;}
+.nav-dropdown li a:hover{background:var(--light);color:var(--purple);}
+.nav-dropdown li+li{border-top:1px solid var(--border);}
+.nav-cta{background:var(--purple);color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:600;font-size:.86rem;text-decoration:none;transition:background .2s;white-space:nowrap;margin-left:8px;}
+.nav-cta:hover{background:var(--purple2);}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s;}
+nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+nav.open .nav-toggle span:nth-child(2){opacity:0;}
+nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+nav.open .nav-menu{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:140px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:16px 5% 20px;gap:2px;box-shadow:0 8px 24px rgba(61,44,110,.1);}
+nav.open .nav-menu>li{width:100%;}
+nav.open .nav-menu>li>a{padding:10px 0;border-radius:0;}
+nav.open .nav-dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:3px solid var(--border);border-radius:0;padding:4px 0 4px 12px;margin-top:2px;}
+nav.open .nav-dropdown li a{padding:8px 12px;}
+@media(max-width:860px){.nav-toggle{display:flex;}.nav-menu{display:none;}.nav-cta{font-size:.8rem;padding:9px 14px;}}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,var(--navy) 0%,var(--dark) 100%);padding:80px 6% 72px;text-align:center;}
+.page-eyebrow{font-size:.75rem;font-weight:700;color:#C9BFED;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px;}
+.page-hero h1{font-size:clamp(1.9rem,3vw,2.6rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:16px;}
+.page-hero h1 em{font-style:normal;color:#C9BFED;}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,.72);max-width:600px;margin:0 auto;line-height:1.75;}
+
+/* SECTIONS */
+section{padding:80px 6%;}
+.section-inner{max-width:1000px;margin:0 auto;}
+.section-eyebrow{font-size:.72rem;font-weight:700;color:var(--purple);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px;}
+.stitle{font-size:clamp(1.55rem,2.5vw,2rem);font-weight:800;color:var(--dark);line-height:1.25;margin-bottom:14px;}
+.sdesc{font-size:.97rem;color:var(--soft);max-width:680px;line-height:1.75;margin-bottom:52px;}
+
+/* ACCORDIONS */
+.honest-section{background:var(--white);}
+.faq-section{background:var(--gray);}
+
+.acc-item{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--white);margin-bottom:12px;}
+.acc-q{display:flex;justify-content:space-between;align-items:center;padding:22px 28px;cursor:pointer;transition:background .2s;}
+.acc-q:hover{background:var(--light);}
+.acc-q h4{font-size:.95rem;font-weight:700;color:var(--dark);line-height:1.4;}
+.acc-q .acc-icon{font-size:1.4rem;line-height:1;color:var(--purple);flex-shrink:0;margin-left:16px;transition:transform .3s;font-weight:300;}
+.acc-item.open .acc-icon{transform:rotate(45deg);}
+.acc-a{display:none;padding:0 28px 24px;font-size:.9rem;color:var(--soft);line-height:1.75;}
+.acc-a p{padding-top:16px;}
+.acc-a a{color:var(--purple);font-weight:600;}
+.acc-item.open .acc-a{display:block;}
+
+/* CTA */
+.cta-section{background:linear-gradient(160deg,var(--navy),var(--dark));text-align:center;padding:80px 6%;}
+.cta-section .page-eyebrow{color:#C9BFED;}
+.cta-section h2{font-size:clamp(1.55rem,2.5vw,2rem);font-weight:800;color:#fff;margin-bottom:14px;}
+.cta-section p{color:rgba(255,255,255,.72);font-size:.97rem;max-width:560px;margin:0 auto 36px;line-height:1.75;}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;padding:13px 28px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:background .2s;}
+.btn-main:hover{background:var(--purple2);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1.5px solid rgba(255,255,255,.35);color:rgba(255,255,255,.85);padding:13px 28px;border-radius:8px;font-weight:700;font-size:.92rem;text-decoration:none;transition:border-color .2s,color .2s;}
+.btn-ghost:hover{border-color:rgba(255,255,255,.65);color:#fff;}
+
+footer{background:var(--dark);padding:28px 6%;text-align:center;color:rgba(255,255,255,.45);font-size:.82rem;}
+footer a{color:rgba(255,255,255,.55);text-decoration:none;}
+
+@media(max-width:640px){.acc-q{padding:18px 20px;}.acc-a{padding:0 20px 20px;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="FSC_LandingPage.html" class="nav-logo-link">
+    <img src="fsc-logo.png" style="height:144px;width:auto;display:block;" alt="Fertility Solutions Center">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="FSC_About.html">About Us</a></li>
+    <li><a href="FSC_WhyFamilies.html" class="active">Why Families Choose Us</a></li>
+    <li class="has-dropdown">
+      <a href="FSC_Programs.html">Programs <span class="arrow">▾</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="FSC_Programs.html">Programs &amp; Costs</a></li>
+        <li><a href="FSC_HIV.html">HIV Programs</a></li>
+      </ul>
+    </li>
+    <li><a href="FSC_Testimonials.html">Testimonials</a></li>
+    <li><a href="FSC_Blog.html">Blog</a></li>
+    <li><a href="FSC_Contact.html">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-eyebrow">Why Families Choose Us</div>
+  <h1>The Questions You Should Ask <em>Any Agency</em></h1>
+  <p>We wrote the questions you should ask — and answered them honestly. Because an agency that only shares the good news isn't the one you want managing your surrogacy.</p>
+</div>
+
+<!-- HONEST ABOUT US -->
+<section class="honest-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Honest About Us</div>
+    <h2 class="stitle">What You Should Ask Every Agency You Talk To</h2>
+    <p class="sdesc">Before you commit to any agency — including us — you deserve direct answers to the questions that actually matter. Here are ours.</p>
+
+    <div class="acc-group honest-group">
+
+      <div class="acc-item open">
+        <div class="acc-q">
+          <h4>How does the Amparo process protect me legally? Can I see documentation of past cases?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>The Amparo is a federal court order granted before birth. It establishes you as the legal parent(s) and instructs the civil registry to issue the birth certificate in your name(s) only — no surrogate listed. Our attorney, Licenciado Buenrostro, has successfully obtained this order for every family we've worked with. We can share anonymized case references and walk you through the timeline in detail during your consultation. This is not a workaround — it's a recognized legal mechanism under Mexican federal law.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>What happens if the surrogate changes her mind?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Because the Amparo is a federal court order established before birth, the legal parentage is already determined. The surrogate's change of heart, while emotionally difficult, does not create a legal dispute over custody or parentage in our cases. This is one of the core reasons we built our program around the Amparo process specifically — it removes the legal uncertainty that makes surrogacy in other jurisdictions risky. We'll explain the exact mechanics during your consultation.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>How does payment work? What do I pay and when?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Payments are milestone-based — you pay at defined stages of the process, not in one lump sum up front. We provide a full cost breakdown before you sign anything. There are no hidden fees that appear mid-process. The total depends on which program fits your situation, and we'll go through every line item with you before you make any decision. We don't believe in surprising families with costs after they're already emotionally invested.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Can I speak directly with families who have gone through this with you?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Yes. We can connect you with past families who have agreed to speak with prospective clients. We won't hand you a scripted reference — these are real conversations, and past families say what they actually experienced. We also have Google reviews you can read publicly, and we encourage you to look at those before you talk to us. If an agency won't let you speak with past clients, that's worth noting.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Do you have surrogates available now, or is there a waiting list?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>We'll give you an honest current status on our first call. Surrogate availability changes — we won't tell you "no wait" if there is one, and we won't inflate the wait if there isn't. What we can tell you is that our matching process involves pre-screened candidates with completed psychological and medical evaluations, so the wait is for a qualified match, not just a name on a list. Quality takes the time it takes — we'd rather be honest about that than rush a match that affects your entire journey.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Frequently Asked Questions</div>
+    <h2 class="stitle">The Questions We Hear Most Often</h2>
+    <p class="sdesc">Straightforward answers to the things people actually want to know before they start a consultation.</p>
+
+    <div class="acc-group faq-group">
+
+      <div class="acc-item open">
+        <div class="acc-q">
+          <h4>Is surrogacy legal in Mexico?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Yes. Surrogacy is legal in Mexico, and our program operates in Quintana Roo (Cancún), where the legal framework is established and our cases are processed under federal court jurisdiction via the Amparo process. We've completed surrogacies for US, Canadian, and international families without legal complication. Mexican law does not restrict surrogacy access based on sexual orientation or family configuration.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Will my baby be able to enter the US or Canada?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Yes. The process for obtaining your child's US or Canadian passport and citizenship documentation begins after the birth certificate is issued. The Amparo birth certificate names you as the legal parent(s), which is the foundation document for consulate processing. Many of our families have returned home with their babies without immigration complications — but we always recommend consulting with an immigration attorney in your home country for your specific situation.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>What does a surrogacy journey actually cost?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>We share full cost breakdowns in the consultation, not before, because the right number depends on which program fits your situation, your medical profile, and other individual factors. What we can say: surrogacy in Mexico is substantially more affordable than in the US or Canada while using the same quality of medical care. We don't publish a single price because quoting a number before understanding your case would be misleading.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>What can go wrong, and what happens if it does?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Surrogacy involves real medical processes with real uncertainty — failed transfers, early pregnancy loss, and unexpected complications do happen. We won't pretend otherwise. What we can tell you is how we handle each scenario: what re-transfer protocols look like, what financial structures apply in those cases, and how we communicate with you through difficult news. We'd rather you ask us this question now than discover the answers during a hard moment mid-journey.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>How long does the process take?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>From program enrollment to birth, most families complete the journey in 12 to 18 months, depending on the program and how quickly matching and medical steps progress. FET programs (existing embryos) tend to move faster. We'll give you a realistic timeline for your specific case during the consultation — not a marketing-optimistic number.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Can I use frozen embryos I already have?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Yes. This is what our FET (Frozen Embryo Transfer) Program is designed for. We coordinate embryo transport if your embryos are stored outside Mexico and handle all logistics with the receiving clinic. You still go through surrogate matching and the full Amparo legal process — the FET program simply removes the egg donation and IVF steps since those are already completed.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Do I need to travel to Cancún? How many times?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Most families visit twice: once early in the process for surrogate meeting, clinic orientation, and contract signing, and again for the birth. Some families add a third visit for specific medical appointments. Everything else — updates, appointments, paperwork — is handled remotely by your coordinator. We'll outline the expected trips for your program during the consultation so you can plan accordingly.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>How do you select surrogates?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>All surrogates in our program have completed psychological screening, full medical evaluation, and a detailed interview process before they're matched with any family. We only work with women who have already had children of their own and are pursuing surrogacy from an informed, voluntary place. You receive a profile before any match is confirmed, and you can ask questions. A surrogate who passes every screen but doesn't feel right to you is not the right match.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>Can same-sex couples and single parents pursue surrogacy here?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>Yes. We have worked with gay male couples, lesbian couples, single mothers, and single fathers. The Amparo process works for all family configurations — it names the intended parent(s) on the birth certificate regardless of whether that's one person or two, and regardless of gender or sexual orientation. Roughly half of our families are same-sex couples. You won't be treated as an edge case here.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-q">
+          <h4>I'm not ready to talk yet — how do I stay informed?</h4>
+          <span class="acc-icon">+</span>
+        </div>
+        <div class="acc-a">
+          <p>That's a completely normal place to be. You can download our <a href="FSC_LandingPage.html#magazine">Surrogacy México magazine</a> — it covers the Amparo process, program structures, costs, and what the journey actually looks like in plain language. No sales follow-up attached. When you're ready to talk, we'll be here.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="page-eyebrow">When You're Ready</div>
+  <h2>A 30-Minute Conversation Can Answer Most of This</h2>
+  <p>Free consultation. No application, no deposit. You bring your questions — we give you honest answers and a realistic picture of your options.</p>
+  <div class="cta-btns">
+    <a href="https://calendly.com/fertilitysolutionscenter/schedule-your-free-consultation" target="_blank" class="btn-main"> Book Your Free Call</a>
+    <a href="https://wa.me/529843974122?text=Hi%2C%20I%20have%20some%20questions%20about%20surrogacy%20in%20Mexico." target="_blank" class="btn-ghost"> Message Us on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Fertility Solutions Center Cancún &nbsp;·&nbsp; <a href="FSC_LandingPage.html">Home</a> &nbsp;·&nbsp; <a href="https://wa.me/529843974122">WhatsApp</a> &nbsp;·&nbsp; <a href="mailto:info@fertilitysolutionscenter.com">Email</a></p>
+</footer>
+
+<script>
+  const t=document.getElementById("navToggle"),n=document.getElementById("mainNav");
+  t.addEventListener("click",()=>n.classList.toggle("open"));
+  document.addEventListener("click",e=>{if(!n.contains(e.target))n.classList.remove("open");});
+
+  document.querySelectorAll(".acc-q").forEach(q=>{
+    q.addEventListener("click",()=>{
+      const item=q.closest(".acc-item");
+      const group=q.closest(".acc-group");
+      const wasOpen=item.classList.contains("open");
+      group.querySelectorAll(".acc-item").forEach(i=>i.classList.remove("open"));
+      if(!wasOpen)item.classList.add("open");
+    });
+  });
+</script>
+</body>
+</html>

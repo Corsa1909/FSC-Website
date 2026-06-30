@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guaranteed Program — Fertility Solutions Center</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --purple: #7B68AE;
+    --dark:   #3D2C6E;
+    --navy:   #2D1F5E;
+    --light:  #F4F1FA;
+    --border: #E2DCF0;
+  }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--dark);
+    padding: 14px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-bottom: 2px solid var(--purple);
+  }
+  .header-logo {
+    height: 52px;
+    width: auto;
+  }
+  .header-label {
+    font-size: .82rem;
+    font-weight: 600;
+    color: rgba(255,255,255,.55);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  .header-badge {
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--purple);
+    background: rgba(123,104,174,.15);
+    border: 1px solid var(--purple);
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+  }
+
+  /* ── VIEWER WRAPPER ── */
+  .viewer-wrap {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Transparent overlay — blocks right-click save / drag */
+  .shield {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background: transparent;
+    pointer-events: none; /* allow scroll inside iframe */
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 10px 5%;
+    text-align: center;
+    font-size: .75rem;
+    color: rgba(255,255,255,.35);
+    flex-shrink: 0;
+    letter-spacing: .5px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="fsc-logo.png" alt="Fertility Solutions Center" class="header-logo">
+  <span class="header-label">Confidential Proposal</span>
+  <span class="header-badge">Guaranteed Program · 2026</span>
+</header>
+
+<div class="viewer-wrap">
+  <!-- Shield overlay to discourage casual download/drag -->
+  <div class="shield" oncontextmenu="return false;"></div>
+
+  <iframe
+    src="guaranteed-program.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
+    type="application/pdf"
+    title="Guaranteed Full IVF Program 2026">
+    <p style="padding:40px;color:#555;text-align:center;">
+      Your browser does not support inline PDFs.
+      Please contact us directly for the document.
+    </p>
+  </iframe>
+</div>
+
+<footer>
+  © 2026 Fertility Solutions Center Cancún &nbsp;·&nbsp; Confidential — for intended use only &nbsp;·&nbsp; fertilitysolutionscenter.com
+</footer>
+
+<script>
+  // Block right-click on the whole page
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  // Block common keyboard shortcuts for saving
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && ['s','p','u'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>
