@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Surrogacy in Mexico | Fertility Solutions Center Cancún</title>
 <meta name="description" content="10+ years guiding international families through surrogacy in Mexico. Amparo-protected. Full medical, legal & coordination support. No pressure — just honest answers.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1261,8 +1259,8 @@
         <div>
           <label style="display:block;font-size:.82rem;font-weight:600;color:var(--dark);margin-bottom:6px;">Phone <span style="color:#B42318;">*</span></label>
           <div style="display:flex;gap:8px;">
-            <select id="dialCode" name="dialCode" required
-              style="flex-shrink:0;padding:12px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:.88rem;color:var(--text);background:#fff;outline:none;cursor:pointer;transition:border-color .2s;"
+            <select id="dialCode" name="dialCode" required size="1"
+              style="flex-shrink:0;padding:12px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:.88rem;color:var(--text);background:#fff;outline:none;cursor:pointer;transition:border-color .2s;height:46px;-webkit-appearance:auto;appearance:auto;overflow:hidden;"
               onfocus="this.style.borderColor='var(--purple)'" onblur="this.style.borderColor='var(--border)'">
               <option value="+1-us">🇺🇸 +1</option>
               <option value="+1-ca">🇨🇦 +1</option>
@@ -1410,21 +1408,6 @@
 <a href="https://wa.me/529843974122?text=Hello%2C%20I%20saw%20your%20website%20and%20have%20some%20questions." class="wa-float" target="_blank" title="Chat on WhatsApp"></a>
 
 <script>
-  // Phone flag selector
-  const phoneInput = document.getElementById('phoneInput');
-  const iti = window.intlTelInput(phoneInput, {
-    initialCountry: 'us',
-    preferredCountries: ['us', 'ca', 'mx', 'es', 'gb', 'au'],
-    separateDialCode: true,
-    utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js'
-  });
-  // Style the wrapper on focus
-  phoneInput.addEventListener('focus', () => {
-    document.getElementById('phoneWrapper').style.borderColor = 'var(--purple)';
-  });
-  phoneInput.addEventListener('blur', () => {
-    document.getElementById('phoneWrapper').style.borderColor = 'var(--border)';
-  });
 
   function handleIntakeSubmit(e) {
     e.preventDefault();
