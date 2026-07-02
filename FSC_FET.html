@@ -37,6 +37,13 @@
   .shield { position: absolute; inset: 0; z-index: 10; background: transparent; pointer-events: none; }
   iframe { width: 100%; height: 100%; border: none; display: block; }
   footer { background: var(--navy); padding: 10px 5%; text-align: center; font-size: .75rem; color: rgba(255,255,255,.35); flex-shrink: 0; letter-spacing: .5px; }
+  @media (max-width: 560px) {
+    header { padding: 10px 4%; gap: 8px; }
+    .header-logo { height: 38px; }
+    .header-label { display: none; }
+    .header-badge { font-size: .68rem; padding: 4px 10px; }
+    footer { font-size: .68rem; padding: 8px 4%; }
+  }
 </style>
 </head>
 <body>
