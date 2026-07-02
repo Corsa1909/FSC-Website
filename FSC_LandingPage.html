@@ -68,6 +68,15 @@
   }
   .nav-dropdown li a:hover { background: var(--light); color: var(--purple); }
   .nav-dropdown li + li { border-top: 1px solid var(--border); }
+  /* Mobile-only language item (shown inside the hamburger menu) */
+  .mobile-lang-item { display: none; }
+  .mobile-lang-item > a { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+  #mobileLangDropdown { list-style: none; }
+  #mobileLangDropdown li a {
+    display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+    font-size: .84rem; color: var(--soft); text-decoration: none;
+  }
+  #mobileLangDropdown li a:hover { color: var(--purple); }
   /* CTA */
   .nav-cta {
     background: var(--purple); color: var(--white) !important;
@@ -103,6 +112,9 @@
     border-radius: 0; padding: 4px 0 4px 12px; margin-top: 2px;
   }
   nav.open .nav-dropdown li a { padding: 8px 12px; }
+  nav.open #mobileLangDropdown {
+    border-left: 3px solid var(--border); padding: 4px 0 4px 12px; margin-top: 2px;
+  }
   @media (max-width: 860px) {
     .nav-toggle { display: flex; }
     .nav-menu { display: none; }
@@ -111,6 +123,7 @@
     .nav-logo-link img { height: 52px!important; }
     nav.open .nav-menu { top: 84px; }
     #langMenu, .nav-wa-btn { display: none!important; }
+    .mobile-lang-item { display: block; }
   }
 
   /* ── HERO ────────────────────────────────────────────────────────────── */
@@ -651,6 +664,23 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-menu" id="navMenu">
+    <li class="mobile-lang-item">
+      <a href="#" onclick="toggleMobileLangMenu(event)">🌐 Language <span class="arrow" id="mobileLangArrow">▾</span></a>
+      <ul id="mobileLangDropdown" style="display:none;list-style:none;">
+        <li><a onclick="setLangMobile('en')" href="#">🇺🇸 English</a></li>
+        <li><a onclick="setLangMobile('es')" href="#">🇪🇸 Español</a></li>
+        <li><a onclick="setLangMobile('fr')" href="#">🇫🇷 Français</a></li>
+        <li><a onclick="setLangMobile('de')" href="#">🇩🇪 Deutsch</a></li>
+        <li><a onclick="setLangMobile('it')" href="#">🇮🇹 Italiano</a></li>
+        <li><a onclick="setLangMobile('pt')" href="#">🇧🇷 Português</a></li>
+        <li><a onclick="setLangMobile('nl')" href="#">🇳🇱 Nederlands</a></li>
+        <li><a onclick="setLangMobile('sv')" href="#">🇸🇪 Svenska</a></li>
+        <li><a onclick="setLangMobile('ja')" href="#">🇯🇵 日本語</a></li>
+        <li><a onclick="setLangMobile('zh-CN')" href="#">🇨🇳 中文</a></li>
+        <li><a onclick="setLangMobile('ar')" href="#">🇸🇦 العربية</a></li>
+        <li><a onclick="setLangMobile('ru')" href="#">🇷🇺 Русский</a></li>
+      </ul>
+    </li>
     <li><a href="FSC_About.html">About Us</a></li>
     <li><a href="FSC_WhyFamilies.html">Why Families Choose Us</a></li>
     <li class="has-dropdown">
@@ -712,8 +742,7 @@
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({ pageLanguage:'en', autoDisplay:false }, 'google_translate_element');
   }
-  function setLang(lang) {
-    document.getElementById('langDropdown').style.display = 'none';
+  function applyLang(lang) {
     if (lang === 'en') {
       // Reset to English
       const iframe = document.querySelector('.goog-te-banner-frame');
@@ -728,6 +757,10 @@
     const combo = document.querySelector('.goog-te-combo');
     if (combo) { combo.value = lang; combo.dispatchEvent(new Event('change')); }
   }
+  function setLang(lang) {
+    document.getElementById('langDropdown').style.display = 'none';
+    applyLang(lang);
+  }
   function toggleLangMenu() {
     const d = document.getElementById('langDropdown');
     d.style.display = d.style.display === 'none' ? 'block' : 'none';
@@ -737,6 +770,16 @@
       document.getElementById('langDropdown').style.display = 'none';
     }
   });
+  function setLangMobile(lang) {
+    document.getElementById('mobileLangDropdown').style.display = 'none';
+    applyLang(lang);
+  }
+  function toggleMobileLangMenu(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const d = document.getElementById('mobileLangDropdown');
+    d.style.display = d.style.display === 'none' ? 'block' : 'none';
+  }
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
